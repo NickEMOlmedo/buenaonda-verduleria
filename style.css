@@ -1,0 +1,145 @@
+/* --- Google Fonts --- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* --- Paleta de Colores --- */
+
+:root {
+
+    --main-bg-color: #E5E5E5;
+    --primary-color: #20964F;
+    --secondary-color: #4A7AD3;
+    --tertiary-color: #A859C3;
+    --fourth-color: #DD4D4D;
+    --fifth-color: #FFEDCC;
+    --text-color-primary: #FFFFFF;
+    --text-color-secondary: #2E2929;
+}
+
+body {
+
+    font-family: Rubik, Roboto, sans-serif;
+}
+
+.main-container>* {
+
+    border-radius: 10px;
+
+}
+
+.main-container {
+
+    display: grid;
+    margin: 0 auto;
+    gap: 5px;
+    grid-template:
+        "navbar-burger" 1fr
+        "main-welcome" 10fr
+        "carrousel-promotions" 5fr
+        "orders-banner" 5fr
+        "sales-section" 10fr
+        "footer" 3fr;
+
+
+    .navbar {
+        grid-area: navbar;
+        background-color: var( --primary-color);
+    }
+
+    .navbar-burger {
+
+        grid-area: navbar-burger;
+        background-color: var( --primary-color);
+    }
+
+    .main-welcome {
+        grid-area: main-welcome;
+        background-color: var(--fifth-color);
+    }
+
+    .carrousel-promotions {
+        grid-area: carrousel-promotions;
+        background-color: var(--tertiary-color);
+    }
+
+    .orders-banner {
+        grid-area: orders-banner;
+        background-color: var(--primary-color);
+    }
+
+    .sales-section {
+        grid-area: sales-section;
+        background-color: var(--secondary-color);
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color: var(--primary-color);
+    }
+
+
+    @media (min-width:320px) {
+
+        .navbar {
+
+            display: none;
+
+        }
+
+        .current-promotions {
+
+            display: none;
+
+        }
+
+    }
+
+    @media (min-width:760px) {
+
+        .navbar {
+
+            display: none;
+        }
+
+        grid-template: "navbar-burger" 2fr
+        "main-welcome" 25fr
+        "carrousel-promotions" 14fr
+        "orders-banner" 14fr
+        "sales-section" 25fr
+        "footer" 5fr;
+
+    }
+
+    @media (min-width: 1024px) {
+
+        .navbar {
+
+            display: grid;
+        }
+
+        .navbar-burger {
+
+            display: none;
+
+        }
+
+
+        grid-template: "navbar" 2fr
+        "main-welcome" 25fr
+        "carrousel-promotions" 14fr
+        "orders-banner" 14fr
+        "sales-section" 25fr
+        "footer" 5fr;
+    }
+
+
+
+}
