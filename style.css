@@ -36,6 +36,7 @@
 body {
 
     font-family: Rubik, Roboto, sans-serif;
+    font-size: 24px;
 }
 
 /* --- Fin Fuente --- */
@@ -47,7 +48,6 @@ body {
 
     display: grid;
     margin: 0 auto;
-    gap: 5px;
     grid-template:
         "navbar-burger" 1fr
         "main-welcome" 10fr
@@ -59,13 +59,13 @@ body {
 
     .navbar {
         grid-area: navbar;
-        background-color: var( --primary-color);
+        background-color: var(--primary-color);
     }
 
     .navbar-burger {
 
         grid-area: navbar-burger;
-        background-color: var( --primary-color);
+        background-color: var(--primary-color);
     }
 
     .main-welcome {
@@ -93,12 +93,12 @@ body {
         background-color: var(--primary-color);
     }
 
-/* --- Fin de Grid --- */
+    /* --- Fin de Grid --- */
 
 
     /* --- BreakPoints --- */
 
-/* --- Los breakpoints estan configurados de esta manera 
+    /* --- Los breakpoints estan configurados de esta manera 
         porque en el modo de Mobile quiero que se muestre el navbar en estilo hamburguesa
         y el carrousel-promotions y en modo desktop quiero que se muestre tal cual como esta en
         el diseño original de figma  --- */
@@ -158,57 +158,99 @@ body {
         "footer" 5fr;
     }
 
-/* --- Fin BreakPoints --- */
+    /* --- Fin BreakPoints --- */
 
 
-/* --- Seccion para el CSS de Index --- */
+    /* --- Seccion para el CSS de Index --- */
 
 
+    .navbar {
+
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar img:first-child {
 
 
+        width: 3.875rem;
+        height: 3.292rem;
+        
 
+    }
 
+    .navbar div:first-child {
 
+        padding-left: 2rem;
+        justify-content: center;
 
+    }
 
+    #logo-letter {
 
+        display: inline-block;
+        color: var(--main-bg-color);
+        align-items: center;
 
+    }
 
+    #logo-letter p:first-child {
 
-
-
-
-
-/* --- Fin Seccion para el CSS del Index --- */
-
-
-
-
-/* --- Seccion para el Css de Productos --- */
-
-
-
-
-/* --- Fin Seccion para el CSS de Productos --- */
-
-
-
-
-/* --- Seccion para el CSS de Nostros --- */
-
-
-
-
-/* --- Fin de Seccion para el CSS de Nosotros --- */
-
+        font-size: 1.111rem;
+        font-weight: bold;
 
 
 
-/* --- Seccion para el CSS de Contacto --- */
+    }
+
+    #logo-letter p:nth-child(2) {
+
+        font-size: 0.556rem;
+        padding-left: 0.4rem;
+        margin-top: -1rem;
+    }
 
 
 
 
-/* --- Fin de Seccion para el CSS de Contacto --- */
+
+
+
+
+
+
+
+
+    /* --- Fin Seccion para el CSS del Index --- */
+
+
+
+
+    /* --- Seccion para el Css de Productos --- */
+
+
+
+
+    /* --- Fin Seccion para el CSS de Productos --- */
+
+
+
+
+    /* --- Seccion para el CSS de Nostros --- */
+
+
+
+
+    /* --- Fin de Seccion para el CSS de Nosotros --- */
+
+
+
+
+    /* --- Seccion para el CSS de Contacto --- */
+
+
+
+
+    /* --- Fin de Seccion para el CSS de Contacto --- */
 
 }
