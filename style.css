@@ -10,7 +10,10 @@
 
 }
 
-/* --- Paleta de Colores --- */
+/* --- Fin de Google Fonts --- */
+
+
+/* --- Paleta de Colores  --- */
 
 :root {
 
@@ -24,16 +27,21 @@
     --text-color-secondary: #2E2929;
 }
 
+/* --- Fin Paleta de Colores --- */
+
+
+/* --- Fuente --- */
+
+
 body {
 
     font-family: Rubik, Roboto, sans-serif;
 }
 
-.main-container>* {
+/* --- Fin Fuente --- */
 
-    border-radius: 10px;
 
-}
+/* --- GRID --- */
 
 .main-container {
 
@@ -84,6 +92,16 @@ body {
         grid-area: footer;
         background-color: var(--primary-color);
     }
+
+/* --- Fin de Grid --- */
+
+
+    /* --- BreakPoints --- */
+
+/* --- Los breakpoints estan configurados de esta manera 
+        porque en el modo de Mobile quiero que se muestre el navbar en estilo hamburguesa
+        y el carrousel-promotions y en modo desktop quiero que se muestre tal cual como esta en
+        el diseño original de figma  --- */
 
 
     @media (min-width:320px) {
@@ -140,6 +158,57 @@ body {
         "footer" 5fr;
     }
 
+/* --- Fin BreakPoints --- */
 
+
+/* --- Seccion para el CSS de Index --- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Fin Seccion para el CSS del Index --- */
+
+
+
+
+/* --- Seccion para el Css de Productos --- */
+
+
+
+
+/* --- Fin Seccion para el CSS de Productos --- */
+
+
+
+
+/* --- Seccion para el CSS de Nostros --- */
+
+
+
+
+/* --- Fin de Seccion para el CSS de Nosotros --- */
+
+
+
+
+/* --- Seccion para el CSS de Contacto --- */
+
+
+
+
+/* --- Fin de Seccion para el CSS de Contacto --- */
 
 }
