@@ -161,9 +161,6 @@ body {
     /* --- Fin BreakPoints --- */
 
 
-    /* --- Seccion para el CSS de Index --- */
-
-
     .navbar {
 
         display: flex;
@@ -215,42 +212,5 @@ body {
 
 
 
-
-
-
-
-
-
-    /* --- Fin Seccion para el CSS del Index --- */
-
-
-
-
-    /* --- Seccion para el Css de Productos --- */
-
-
-
-
-    /* --- Fin Seccion para el CSS de Productos --- */
-
-
-
-
-    /* --- Seccion para el CSS de Nostros --- */
-
-
-
-
-    /* --- Fin de Seccion para el CSS de Nosotros --- */
-
-
-
-
-    /* --- Seccion para el CSS de Contacto --- */
-
-
-
-
-    /* --- Fin de Seccion para el CSS de Contacto --- */
 
 }
