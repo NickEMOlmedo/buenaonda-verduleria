@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg-body:#e1bced7d;
+    --presentation:#fff7e6;
+    --main-bg-color: #E5E5E5;
+    --primary-color: #020202;
+    --secondary-color: #4A7AD3;
+    --tertiary-color: #A859C3;
+    --fourth-color: #DD4D4D;
+    --fifth-color: #FFEDCC;
+    --text-color-primary: #FFFFFF;
+    --text-color-secondary: #2E2929;
+}
+main{
+padding-bottom :2rem ;
+background-color: var(--bg-body);
+}
+.nav-link{
+    list-style: none;
+    color: var(--text-color-primary);
+}
+.nav .icon-redes{
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-redes{
+    width: 30%;
+}
+.nav-redes img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.redes-sociales{
+    height: auto;
+    padding: 2rem 0;
+    background-color:var(--tertiary-color);
+    text-align: center;
+    margin: auto;
+}
+.redes-sociales-texto{
+    color: var(--text-color-primary);
+}
+.redes-sociales_texto h2{
+text-decoration: underline;
+color: var(--text-color-primary);
+}
+.redes-sociales .icon-redes{
+    width: 40%;
+    margin: auto;
+}
+.presentacion{
+    border: 2px solid #4A7AD3;
+    border-radius: 15px;
+    width: 50%;
+    height: auto;
+    background-color: var( --presentation);
+    margin: auto;
+    text-align: center;
+    padding: 5rem  0;
+   
+}
+.presentacion p{
+   text-align: justify;
+   margin: 1rem 4rem;
+}
+.presentacion-col-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+.tel-contacto{
+    height: 20vh;
+    width: 100%;
+    background-color: var(--secondary-color);
+    width: 50%;
+    margin: auto;
+    
+}
+.pedido{
+    text-align: center;
+    margin: auto;
+    text-decoration: underline;
+    color: var(--text-color-primary);
+}
+.numero-tel{
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    margin: auto;
+}
+.numero-tel>div{
+    height: 100%;
+}
+.numero-tel_icon img{
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+.numero-telefono{
+    background-color: var( --tertiary-color);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius:15px ;
+}
+.numeroDeTelefono{
+    font-size: xx-large;
+    font-weight: bold;
+    color: var(--text-color-primary);
+}
+footer{
+   color: var(--text-color-primary);
+}
+.navbar-brand{
+    color: #EDEDED;
+}
