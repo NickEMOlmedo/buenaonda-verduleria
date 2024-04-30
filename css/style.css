@@ -48,6 +48,8 @@ body {
 
     display: grid;
     margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
     grid-template:
         "navbar-burger" 1fr
         "main-welcome" 10fr
@@ -59,39 +61,36 @@ body {
 
     .navbar {
         grid-area: navbar;
-        background-color: var(--primary-color);
     }
 
     .navbar-burger {
 
         grid-area: navbar-burger;
-        background-color: var(--primary-color);
+
     }
 
     .main-welcome {
         grid-area: main-welcome;
-        background-color: var(--fifth-color);
+
     }
 
     .carrousel-promotions {
         grid-area: carrousel-promotions;
-        background-color: var(--tertiary-color);
+
     }
 
     .orders-banner {
         grid-area: orders-banner;
-        background-color: var(--primary-color);
+
     }
 
-    .sales-section {
-        grid-area: sales-section;
-        background-color: var(--secondary-color);
-    }
+    .sales-section {}
 
     .footer {
         grid-area: footer;
-        background-color: var(--primary-color);
+
     }
+
 
     /* --- Fin de Grid --- */
 
@@ -101,7 +100,7 @@ body {
     /* --- Los breakpoints estan configurados de esta manera 
         porque en el modo de Mobile quiero que se muestre el navbar en estilo hamburguesa
         y el carrousel-promotions y en modo desktop quiero que se muestre tal cual como esta en
-        el diseño original de figma  --- */
+        el diseño original de figma, esto aun esta en "veremos" y a decision de ustedes --- */
 
 
     @media (min-width:320px) {
@@ -138,16 +137,18 @@ body {
 
     @media (min-width: 1024px) {
 
-        .navbar {
-
-            display: grid;
-        }
-
         .navbar-burger {
 
             display: none;
 
         }
+
+        .navbar {
+
+            display: inline-flex;
+        }
+
+
 
 
         grid-template: "navbar" 2fr
@@ -157,60 +158,155 @@ body {
         "sales-section" 25fr
         "footer" 5fr;
     }
+}
 
-    /* --- Fin BreakPoints --- */
-
-
-    .navbar {
-
-        display: flex;
-        align-items: center;
-    }
-
-    .navbar img:first-child {
+/* --- Fin BreakPoints --- */
 
 
-        width: 3.875rem;
-        height: 3.292rem;
-        
+/* --- Comienzo Seccion INDEX CSS --- */
 
-    }
+.navbar {
 
-    .navbar div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 
-        padding-left: 2rem;
-        justify-content: center;
-
-    }
-
-    #logo-letter {
-
-        display: inline-block;
-        color: var(--main-bg-color);
-        align-items: center;
-
-    }
-
-    #logo-letter p:first-child {
-
-        font-size: 1.111rem;
-        font-weight: bold;
-
-
-
-    }
-
-    #logo-letter p:nth-child(2) {
-
-        font-size: 0.556rem;
-        padding-left: 0.4rem;
-        margin-top: -1rem;
-    }
-
-
-
-
+    background-color: var(--primary-color);
 
 
 
 }
+
+.navbar img:first-child {
+
+    width: 3.875rem;
+    height: 3.292rem;
+
+
+}
+
+.navbar div:first-child {
+
+    padding-left: 2rem;
+
+}
+
+#logo-letter {
+
+
+    display: inline-block;
+    color: var(--main-bg-color);
+
+
+}
+
+#logo-letter p:first-child {
+
+    font-size: 1.667rem;
+    font-weight: bold;
+
+}
+
+#logo-letter p:nth-child(2) {
+
+    font-size: 0.833rem;
+    font-weight: bold;
+    margin-left: 0.4rem;
+    margin-bottom: 0.8rem;
+}
+
+
+.links-navbar {
+
+    display: inline-flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+.links-navbar a {
+
+    color: var(--text-color-primary);
+    text-decoration: none;
+    font-size: 1rem;
+
+
+
+}
+
+.links-navbar li {
+
+    padding: 0 1rem;
+
+}
+
+.links-navbar a:hover {
+
+    background-color: #4A7AD3;
+
+}
+
+.logo-redes-navbar {
+
+    display: inline-flex;
+    margin-right: 2.5rem;
+
+}
+
+.logo-redes-navbar img:first-child {
+
+
+    width: 2.083rem;
+    height: 2.083rem;
+
+
+}
+
+.logo-redes-navbar img:nth-child(2) {
+
+
+    width: 2.083rem;
+    height: 2.083rem;
+
+
+}
+
+/* --- Fin Seccion Index --- */
+
+/* --- Comienzo Seccion Productos  --- */
+
+
+
+
+
+
+
+
+
+
+/* --- Fin Seccion Productos--- */
+
+/* --- Comienzo Seccion Nosotros  --- */
+
+
+
+
+
+
+
+
+/* --- Fin Seccion Nosotros--- */
+
+/* --- Comienzo Seccion Contactos  --- */
+
+
+
+
+
+
+
+/* --- Fin Seccion Contacto--- */
