@@ -82,6 +82,7 @@ body {
     }
 
     .orders-banner {
+        
         grid-area: orders-banner;
 
     }
