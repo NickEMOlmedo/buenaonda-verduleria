@@ -45,7 +45,7 @@ body {
 /* --- Fin Fuente --- */
 
 
-/* --- GRID --- */
+/* --- Grid --- */
 
 .main-container {
 
@@ -87,7 +87,11 @@ body {
 
     }
 
-    .sales-section {}
+    .sales-section {
+
+        grid-area: sales-section
+
+    }
 
     .footer {
         grid-area: footer;
@@ -167,6 +171,9 @@ body {
 
 
 /* --- Comienzo Seccion INDEX CSS --- */
+
+
+/* NavBar */
 
 .navbar {
 
@@ -281,26 +288,6 @@ body {
     height: 2.083rem;
 
 
-}
-
-.footer {
-    background-color: var(--primary-color);
-    padding: 2rem 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--text-color-primary);
-    margin-top: 4rem;
-}
-
-.logo-footer {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-}
-
-.logo-img {
-    width: 3rem;
 }
 
 /* --- Fin Seccion Index --- */
