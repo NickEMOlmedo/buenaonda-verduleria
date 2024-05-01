@@ -25,6 +25,9 @@
     --fifth-color: #FFEDCC;
     --text-color-primary: #FFFFFF;
     --text-color-secondary: #2E2929;
+    --bg-container-form: #EDEDED;
+    --bg-button-enviar: #28B15F;
+    --bg-button-enviar-dark: #18723c;
 }
 
 /* --- Fin Paleta de Colores --- */
@@ -171,7 +174,7 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
-
+    padding: 1rem;
     background-color: var(--primary-color);
 
 
@@ -190,6 +193,12 @@ body {
 
     padding-left: 2rem;
 
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 #logo-letter {
@@ -213,7 +222,6 @@ body {
     font-size: 0.833rem;
     font-weight: bold;
     margin-left: 0.4rem;
-    margin-bottom: 0.8rem;
 }
 
 
@@ -275,6 +283,26 @@ body {
 
 }
 
+.footer {
+    background-color: var(--primary-color);
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color-primary);
+    margin-top: 4rem;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.logo-img {
+    width: 3rem;
+}
+
 /* --- Fin Seccion Index --- */
 
 /* --- Comienzo Seccion Productos  --- */
@@ -303,10 +331,123 @@ body {
 
 /* --- Comienzo Seccion Contactos  --- */
 
+.container-contactanos {
+    width: 1200px;
+    margin: 0 auto;
+}
 
+.contactanos-title {
+    background-color: var(--tertiary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    border-radius: 1rem;
+    margin: 2rem 0;
+    color: var(--text-color-primary);
+    padding: 2rem 0;
+}
 
+.contactanos-title img {
+    width: 10rem;
+}
 
+.contactanos-title h4 {
+    font-size: 1.6rem;
+    position: relative;
+}
 
+.contactanos-title h4::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Centrar horizontalmente */
+    width: 120%;
+    height: 2px; /* Altura de la línea */
+    background-color: var(--text-color-primary); 
+    margin-top: 1rem;
+}
+.container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--bg-container-form);
+    border: 1px solid var(--secondary-color);
+    padding: 3rem;
+    border-radius: 1rem;
+}
 
+.contactanos-formulario {
+    background-color: var(--secondary-color);
+    padding: 2rem 0;
+    color: var(--text-color-primary);
+    border-radius: 1rem;
+}
 
+.contactanos-formulario h3 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+    position: relative;
+}
+
+.contactanos-formulario h3::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Centrar horizontalmente */
+    width: 20%;
+    height: 2px; /* Altura de la línea */
+    background-color: var(--text-color-primary); 
+    margin-top: .3rem;
+}
+
+.contactanos-formulario form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 60rem;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactanos-formulario label {
+    grid-column: 1;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contactanos-formulario input, textarea {
+    border: none;
+    grid-column: 2;
+    background-color: var(--bg-container-form);
+    border-radius: .5rem;
+    padding: .7rem;
+    margin-top: 2rem;
+    width: 75%;
+}
+
+.contactanos-formulario textarea {
+    height: 20rem;
+}
+
+.form-button {
+    margin: 3rem 0;
+    background-color: var(--bg-button-enviar);
+    color: white;
+    font-size: 24px;
+    border: none;
+    padding: .5rem 4rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: var(--bg-button-enviar-dark);
+    transition: .6s;
+}
 /* --- Fin Seccion Contacto--- */
