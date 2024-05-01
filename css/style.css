@@ -51,7 +51,8 @@ body {
     width: 100%;
     max-width: 100%;
     grid-template:
-        "navbar-burger" 1fr
+
+        "navbar" 1fr
         "main-welcome" 10fr
         "carrousel-promotions" 5fr
         "orders-banner" 5fr
@@ -60,21 +61,19 @@ body {
 
 
     .navbar {
+
         grid-area: navbar;
     }
 
-    .navbar-burger {
-
-        grid-area: navbar-burger;
-
-    }
 
     .main-welcome {
+
         grid-area: main-welcome;
 
     }
 
     .carrousel-promotions {
+
         grid-area: carrousel-promotions;
 
     }
@@ -87,7 +86,6 @@ body {
     .sales-section {
 
         grid-area: sales-section
-
     }
 
     .footer {
@@ -107,53 +105,25 @@ body {
         el diseño original de figma, esto aun esta en "veremos" y a decision de ustedes --- */
 
 
-    @media (min-width:320px) {
-
-        .navbar {
-
-            display: none;
-
-        }
-
-        .current-promotions {
-
-            display: none;
-
-        }
-
-    }
 
     @media (min-width:760px) {
-
-        .navbar {
-
-            display: none;
-        }
-
-        grid-template: "navbar-burger" 2fr
+        
+        grid-template: "navbar" 2fr
         "main-welcome" 25fr
         "carrousel-promotions" 14fr
         "orders-banner" 14fr
         "sales-section" 25fr
         "footer" 5fr;
 
+        .links-navbar, .logo-redes-navbar  {
+
+            flex-direction: row;
+
+        }
+
     }
 
     @media (min-width: 1024px) {
-
-        .navbar-burger {
-
-            display: none;
-
-        }
-
-        .navbar {
-
-            display: inline-flex;
-        }
-
-
-
 
         grid-template: "navbar" 2fr
         "main-welcome" 25fr
@@ -161,6 +131,13 @@ body {
         "orders-banner" 14fr
         "sales-section" 25fr
         "footer" 5fr;
+
+        .links-navbar, .logo-redes-navbar {
+
+            flex-direction: row;
+
+        }
+
     }
 }
 
@@ -178,10 +155,7 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
-
     background-color: var(--primary-color);
-
-
 
 }
 
@@ -189,8 +163,15 @@ body {
 
     width: 3.875rem;
     height: 3.292rem;
+    margin-top: 0.3rem;
+    margin-bottom: -0.4rem;
 
+}
 
+.navbar img:hover {
+
+    transform: scale(1.2);
+    transition: all 0.3s;
 }
 
 .navbar div:first-child {
@@ -201,10 +182,8 @@ body {
 
 #logo-letter {
 
-
     display: inline-block;
     color: var(--main-bg-color);
-
 
 }
 
@@ -228,9 +207,9 @@ body {
 
     display: inline-flex;
     list-style: none;
+    flex-direction: column;
     margin: 0;
     padding: 0;
-
 
 }
 
@@ -241,8 +220,6 @@ body {
     text-decoration: none;
     font-size: 1rem;
 
-
-
 }
 
 .links-navbar li {
@@ -251,34 +228,32 @@ body {
 
 }
 
-.links-navbar a:hover {
+.links-navbar li:hover {
 
-    background-color: #4A7AD3;
 
+    transform: scale(1.2);
+    transition: all 0.3s;
 }
 
 .logo-redes-navbar {
 
     display: inline-flex;
     margin-right: 2.5rem;
+    flex-direction: column;
 
 }
 
 .logo-redes-navbar img:first-child {
 
-
     width: 2.083rem;
     height: 2.083rem;
-
 
 }
 
 .logo-redes-navbar img:nth-child(2) {
 
-
     width: 2.083rem;
     height: 2.083rem;
-
 
 }
 
