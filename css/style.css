@@ -42,7 +42,7 @@ body {
 /* --- Fin Fuente --- */
 
 
-/* --- GRID --- */
+/* --- Grid --- */
 
 .main-container {
 
@@ -84,7 +84,11 @@ body {
 
     }
 
-    .sales-section {}
+    .sales-section {
+
+        grid-area: sales-section
+
+    }
 
     .footer {
         grid-area: footer;
@@ -164,6 +168,9 @@ body {
 
 
 /* --- Comienzo Seccion INDEX CSS --- */
+
+
+/* NavBar */
 
 .navbar {
 
@@ -274,6 +281,21 @@ body {
 
 
 }
+
+/* Fin NavBar */
+
+/*Main-Welcome*/
+
+
+
+
+
+
+
+/*Fin Main-Welcome
+
+
+
 
 /* --- Fin Seccion Index --- */
 
