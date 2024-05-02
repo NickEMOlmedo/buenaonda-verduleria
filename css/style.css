@@ -82,7 +82,7 @@ body {
     }
 
     .orders-banner {
-        
+
         grid-area: orders-banner;
 
     }
@@ -108,18 +108,20 @@ body {
         y el carrousel-promotions y en modo desktop quiero que se muestre tal cual como esta en
         el diseño original de figma, esto aun esta en "veremos" y a decision de ustedes --- */
 
+    @media (min-width:320px) {}
 
 
     @media (min-width:760px) {
-        
-        grid-template: "navbar" 2fr
-        "main-welcome" 25fr
-        "carrousel-promotions" 14fr
-        "orders-banner" 14fr
-        "sales-section" 25fr
-        "footer" 5fr;
 
-        .links-navbar, .logo-redes-navbar  {
+        grid-template: "navbar" 2fr
+            "main-welcome" 25fr
+            "carrousel-promotions" 14fr
+            "orders-banner" 14fr
+            "sales-section" 25fr
+            "footer" 5fr;
+
+        .links-navbar,
+        .logo-redes-navbar {
 
             flex-direction: row;
 
@@ -130,13 +132,14 @@ body {
     @media (min-width: 1024px) {
 
         grid-template: "navbar" 2fr
-        "main-welcome" 25fr
-        "carrousel-promotions" 14fr
-        "orders-banner" 14fr
-        "sales-section" 25fr
-        "footer" 5fr;
+            "main-welcome" 25fr
+            "carrousel-promotions" 14fr
+            "orders-banner" 14fr
+            "sales-section" 25fr
+            "footer" 5fr;
 
-        .links-navbar, .logo-redes-navbar {
+        .links-navbar,
+        .logo-redes-navbar {
 
             flex-direction: row;
 
@@ -205,7 +208,7 @@ body {
 
     font-size: 0.833rem;
     font-weight: bold;
-    margin-left: 0.4rem;
+
 }
 
 
@@ -267,10 +270,44 @@ body {
 
 /*Main-Welcome*/
 
+.main-welcome{
+
+display: flex;
+background-color: var(--fifth-color);
 
 
+}
+
+.img-welcome{
 
 
+margin-top: 2rem;
+
+}
+
+.img-welcome img:first-child{ 
+
+    width: 15.042rem;
+    height: 15.25rem;
+   
+
+    
+}
+
+.img-welcome img:nth-child(2){
+
+width: 14rem;
+height: 13.583rem;
+
+align-items: baseline;
+}
+
+.img-welcome img:last-child{
+
+width: 13.167rem;
+height: 12.542rem;
+
+}
 
 
 /*Fin Main-Welcome
@@ -336,13 +373,17 @@ body {
     content: "";
     position: absolute;
     top: 100%;
-    left: 50%; /* Centrar horizontalmente */
-    transform: translateX(-50%); /* Centrar horizontalmente */
+    left: 50%;
+    /* Centrar horizontalmente */
+    transform: translateX(-50%);
+    /* Centrar horizontalmente */
     width: 120%;
-    height: 2px; /* Altura de la línea */
-    background-color: var(--text-color-primary); 
+    height: 2px;
+    /* Altura de la línea */
+    background-color: var(--text-color-primary);
     margin-top: 1rem;
 }
+
 .container-form {
     display: flex;
     flex-direction: column;
@@ -373,11 +414,14 @@ body {
     content: "";
     position: absolute;
     top: 100%;
-    left: 50%; /* Centrar horizontalmente */
-    transform: translateX(-50%); /* Centrar horizontalmente */
+    left: 50%;
+    /* Centrar horizontalmente */
+    transform: translateX(-50%);
+    /* Centrar horizontalmente */
     width: 20%;
-    height: 2px; /* Altura de la línea */
-    background-color: var(--text-color-primary); 
+    height: 2px;
+    /* Altura de la línea */
+    background-color: var(--text-color-primary);
     margin-top: .3rem;
 }
 
@@ -396,7 +440,8 @@ body {
     margin-top: 2rem;
 }
 
-.contactanos-formulario input, textarea {
+.contactanos-formulario input,
+textarea {
     border: none;
     grid-column: 2;
     background-color: var(--bg-container-form);
@@ -425,4 +470,5 @@ body {
     background-color: var(--bg-button-enviar-dark);
     transition: .6s;
 }
+
 /* --- Fin Seccion Contacto--- */
