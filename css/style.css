@@ -150,6 +150,9 @@ body {
 
 /* --- Fin BreakPoints --- */
 
+ 
+
+
 
 /* --- Comienzo Seccion INDEX CSS --- */
 
@@ -212,11 +215,12 @@ body {
 }
 
 
+
 .links-navbar {
 
     display: inline-flex;
     list-style: none;
-    flex-direction: column;
+    flex-direction: row;
     margin: 0;
     padding: 0;
 
@@ -246,9 +250,9 @@ body {
 
 .logo-redes-navbar {
 
-    display: inline-flex;
+    display: flex;
     margin-right: 2.5rem;
-    flex-direction: column;
+    flex-direction: row;
 
 }
 
@@ -332,12 +336,105 @@ height: 12.542rem;
 
 /* --- Comienzo Seccion Nosotros  --- */
 
+.redes-sociales{
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+
+}
+.contRedes-sociales{
+    width: 70%;
+    padding: 2rem;
+    border-radius:15px;
+}
+.redes-sociales .row{
+    background-color: var(--tertiary-color);
+
+}
+.redes-sociales_texto{
+    text-decoration: underline;
+    color: var(--text-color-primary);
+}
+.contRedes-sociales1{
+    border-top-left-radius:15px ;
+    border-top-right-radius:15px ;
+    padding-top:3rem ;
+}
+.contRedes-sociales2{
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:15px ;
+    padding-bottom:3rem ;
+
+}
+.redes-sociales .row .col{
+    display: flex;
+    justify-content: center;
+}
+
+
+.presentacion-container{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.presentacion-container .presentacion{
+background-color: var(--bg-container-form);
+    border-radius:15px ;
+    width: 50%;
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem 0;
+}
+.presentacion-container .presentacion p{
+   text-align: justify;
+}
 
 
 
-
-
-
+.tel-contacto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 2rem 0;
+}
+.pedido{
+    padding-top: 2rem;
+    color: var(--text-color-primary);
+    text-decoration: underline;
+}
+.pedido h5{
+   width: 60%;
+}
+.numero-tel{
+    padding-bottom: 1rem;
+}
+.tel-contacto >.row{
+    text-align: center;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+}
+.tel-contacto .row .col-6{
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 60%;
+    border-radius:15px ;
+    padding: 1rem 0;
+}
+.tel-contacto .row .col-6 .numeroDeTelefono{
+margin: auto;
+color: var(--text-color-primary);
+}
+.numero-tel_icon{
+    margin: auto;
+}
 
 /* --- Fin Seccion Nosotros--- */
 
