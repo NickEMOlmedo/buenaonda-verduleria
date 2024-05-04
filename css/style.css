@@ -52,7 +52,6 @@ body {
     display: grid;
     margin: 0 auto;
     width: 100%;
-    max-width: 100%;
     grid-template:
 
         "navbar" 1fr
@@ -108,8 +107,6 @@ body {
         y el carrousel-promotions y en modo desktop quiero que se muestre tal cual como esta en
         el diseño original de figma, esto aun esta en "veremos" y a decision de ustedes --- */
 
-    @media (min-width:320px) {}
-
 
     @media (min-width:760px) {
 
@@ -145,12 +142,37 @@ body {
 
         }
 
+
+        .img-welcome div:first-child {
+
+            padding-left: 10rem;
+
+        }
+
+        .img-welcome div:nth-child(2) {
+
+            padding-right: 8rem;
+            margin-top: -2rem;
+
+        }
+
+        .img-welcome div:last-child {
+
+            padding-left: 22rem;
+            margin-top: -20rem
+        }
+
+        .banner-map {
+
+            margin-left: 2rem;
+
+        }
     }
 }
 
 /* --- Fin BreakPoints --- */
 
- 
+
 
 
 
@@ -221,8 +243,7 @@ body {
     display: inline-flex;
     list-style: none;
     flex-direction: row;
-    margin: 0;
-    padding: 0;
+
 
 }
 
@@ -258,15 +279,15 @@ body {
 
 .logo-redes-navbar img:first-child {
 
-    width: 2.083rem;
-    height: 2.083rem;
+    max-width: 2.083rem;
+    max-height: 2.083rem;
 
 }
 
 .logo-redes-navbar img:nth-child(2) {
 
-    width: 2.083rem;
-    height: 2.083rem;
+    max-width: 2.083rem;
+    max-height: 2.083rem;
 
 }
 
@@ -274,42 +295,61 @@ body {
 
 /*Main-Welcome*/
 
-.main-welcome{
 
-display: flex;
-background-color: var(--fifth-color);
+.main-welcome {
 
-
-}
-
-.img-welcome{
-
-
-margin-top: 2rem;
+    display: inline-flex;
+    background-color: var(--fifth-color);
 
 }
 
-.img-welcome img:first-child{ 
 
-    width: 15.042rem;
-    height: 15.25rem;
-   
+.welcome-text {
 
-    
+    margin-top: 5rem;
+    margin-left: 3rem;
+
 }
 
-.img-welcome img:nth-child(2){
+.welcome-text p:first-child {
 
-width: 14rem;
-height: 13.583rem;
+    font-size: 2.083rem;
+    font-weight: bold;
 
-align-items: baseline;
 }
 
-.img-welcome img:last-child{
+.welcome-text article:nth-child(2) {
 
-width: 13.167rem;
-height: 12.542rem;
+    font-size: 0.833rem;
+
+}
+
+.img-welcome {
+
+    margin-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+
+
+.banner-map {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 17.208rem;
+    height: 4.167rem;
+    color: var(--main-bg-color);
+    background-color: var(--fourth-color);
+    border-radius: 5px;
+
+}
+
+.banner-map img:first-child {
+
+    max-width: 3.333rem;
+    max-height: 3.264rem;
 
 }
 
@@ -336,81 +376,92 @@ height: 12.542rem;
 
 /* --- Comienzo Seccion Nosotros  --- */
 
-.redes-sociales{
+.redes-sociales {
     border-radius: 15px;
     display: flex;
     justify-content: center;
 
 }
-.contRedes-sociales{
+
+.contRedes-sociales {
     width: 70%;
     padding: 2rem;
-    border-radius:15px;
+    border-radius: 15px;
 }
-.redes-sociales .row{
+
+.redes-sociales .row {
     background-color: var(--tertiary-color);
 
 }
-.redes-sociales_texto{
+
+.redes-sociales_texto {
     text-decoration: underline;
     color: var(--text-color-primary);
 }
-.contRedes-sociales1{
-    border-top-left-radius:15px ;
-    border-top-right-radius:15px ;
-    padding-top:3rem ;
+
+.contRedes-sociales1 {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-top: 3rem;
 }
-.contRedes-sociales2{
-    border-bottom-left-radius:15px ;
-    border-bottom-right-radius:15px ;
-    padding-bottom:3rem ;
+
+.contRedes-sociales2 {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-bottom: 3rem;
 
 }
-.redes-sociales .row .col{
+
+.redes-sociales .row .col {
     display: flex;
     justify-content: center;
 }
 
 
-.presentacion-container{
+.presentacion-container {
     margin: auto;
     display: flex;
     justify-content: center;
 }
 
-.presentacion-container .presentacion{
-background-color: var(--bg-container-form);
-    border-radius:15px ;
+.presentacion-container .presentacion {
+    background-color: var(--bg-container-form);
+    border-radius: 15px;
     width: 50%;
     text-align: center;
     padding: 2rem;
     margin: 1rem 0;
 }
-.presentacion-container .presentacion p{
-   text-align: justify;
+
+.presentacion-container .presentacion p {
+    text-align: justify;
 }
 
 
 
-.tel-contacto{
+.tel-contacto {
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 100%;
     margin: 2rem 0;
 }
-.pedido{
+
+.pedido {
     padding-top: 2rem;
     color: var(--text-color-primary);
     text-decoration: underline;
 }
-.pedido h5{
-   width: 60%;
+
+.pedido h5 {
+    width: 60%;
 }
-.numero-tel{
+
+.numero-tel {
     padding-bottom: 1rem;
 }
-.tel-contacto >.row{
+
+.tel-contacto>.row {
     text-align: center;
     background-color: var(--secondary-color);
     display: flex;
@@ -418,21 +469,24 @@ background-color: var(--bg-container-form);
     width: 50%;
     margin: auto;
 }
-.tel-contacto .row .col-6{
+
+.tel-contacto .row .col-6 {
     background-color: var(--tertiary-color);
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
     height: 60%;
-    border-radius:15px ;
+    border-radius: 15px;
     padding: 1rem 0;
 }
-.tel-contacto .row .col-6 .numeroDeTelefono{
-margin: auto;
-color: var(--text-color-primary);
+
+.tel-contacto .row .col-6 .numeroDeTelefono {
+    margin: auto;
+    color: var(--text-color-primary);
 }
-.numero-tel_icon{
+
+.numero-tel_icon {
     margin: auto;
 }
 
