@@ -56,6 +56,7 @@ body {
 
         "navbar" 1fr
         "main-welcome" 10fr
+        "banner-main-welcome" auto
         "carrousel-promotions" 5fr
         "orders-banner" 5fr
         "sales-section" 10fr
@@ -74,6 +75,11 @@ body {
 
     }
 
+    .banner-main-welcome {
+
+        grid-area:  banner-main-welcome;
+
+    }
     .carrousel-promotions {
 
         grid-area: carrousel-promotions;
@@ -112,6 +118,7 @@ body {
 
         grid-template: "navbar" 2fr
             "main-welcome" 25fr
+            "banner-main-welcome" auto
             "carrousel-promotions" 14fr
             "orders-banner" 14fr
             "sales-section" 25fr
@@ -130,6 +137,7 @@ body {
 
         grid-template: "navbar" 2fr
             "main-welcome" 25fr
+            "banner-main-welcome" auto
             "carrousel-promotions" 14fr
             "orders-banner" 14fr
             "sales-section" 25fr
@@ -298,16 +306,15 @@ body {
 
 .main-welcome {
 
-    display: inline-flex;
+    display: flex;
     background-color: var(--fifth-color);
 
 }
 
-
 .welcome-text {
 
-    margin-top: 5rem;
-    margin-left: 3rem;
+    margin-top: 8rem;
+    margin-left: 4rem;
 
 }
 
@@ -318,17 +325,11 @@ body {
 
 }
 
-.welcome-text article:nth-child(2) {
-
-    font-size: 0.833rem;
-
-}
-
 .img-welcome {
 
     margin-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 1rem;
+    margin-left: 2rem;
+
 }
 
 
@@ -353,6 +354,28 @@ body {
 
 }
 
+.last-banner-main {
+
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color: var(--fifth-color);
+    
+
+}
+
+#banner-main-1,
+#banner-main-2,
+#banner-main-3 {
+    margin-top: 2rem;
+    background-color: var(--bg-button-enviar);
+}
+
+.last-banner-main span {
+
+
+
+}
 
 /*Fin Main-Welcome
 
