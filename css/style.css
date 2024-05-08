@@ -185,6 +185,7 @@ body {
     justify-content: space-between;
     flex-wrap: nowrap;
     background-color: var(--primary-color);
+    padding: 1rem;
 
 }
 
@@ -192,9 +193,6 @@ body {
 
     width: 3.875rem;
     height: 3.292rem;
-    margin-top: 0.3rem;
-    margin-bottom: -0.4rem;
-
 }
 
 .navbar img:hover {
@@ -356,7 +354,26 @@ body {
 
 /*Fin Main-Welcome
 
+/* --- Footer ---*/
 
+.footer {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    color: var(--text-color-primary);
+}
+
+.footer img {
+    width: 3.2rem;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
 
 
 /* --- Fin Seccion Index --- */
