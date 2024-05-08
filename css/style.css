@@ -104,754 +104,37 @@ body {
     }
 }
 
-    /* --- Fin de Grid --- */
+/* --- Fin de Grid --- */
 
 
-    /* --- BreakPoints --- */
-
-    /* --- Los breakpoints estan configurados de esta manera 
-        porque en el modo de Mobile quiero que se muestre el navbar en estilo hamburguesa
-        y el carrousel-promotions y en modo desktop quiero que se muestre tal cual como esta en
-        el diseño original de figma, esto aun esta en "veremos" y a decision de ustedes --- */
+/* --- BreakPoints --- */
 
 
-        @media (min-width:320px) {
-
-        
-
-        }
-
-
-    @media (min-width:760px) {
-
-        grid-template: "navbar" 2fr
-            "main-welcome" 25fr
-            "banner-main-welcome" auto
-            "carrousel-promotions" 14fr
-            "orders-banner" 14fr
-            "sales-section" 25fr
-            "footer" 5fr;
-
-        .links-navbar,
-        .logo-redes-navbar {
-
-            flex-direction: row;
-
-        }
-
+@media (min-width: 1024px) {
+    .img-welcome div:first-child {
+        padding-left: 10rem;
     }
 
-    @media (min-width: 1024px) {
-
-        grid-template: "navbar" 2fr
-            "main-welcome" 25fr
-            "banner-main-welcome" auto
-            "carrousel-promotions" 14fr
-            "orders-banner" 14fr
-            "sales-section" 25fr
-            "footer" 5fr;
-
-        .links-navbar,
-        .logo-redes-navbar {
-
-            flex-direction: row;
-
-        }
-
-
-        .img-welcome div:first-child {
-
-            padding-left: 10rem;
-
-        }
-
-        .img-welcome div:nth-child(2) {
-
-            padding-right: 8rem;
-            margin-top: -2rem;
-
-        }
-
-        .img-welcome div:last-child {
-
-            padding-left: 22rem;
-            margin-top: -20rem
-        }
-
-        .banner-map {
-
-            margin-left: 2rem;
-
-        }
-
-
-        #banner-main-1,
-        #banner-main-2,
-        #banner-main-3 {
-            margin-left: 1.5rem;
-
-            width: 17.5rem;
-            height: 3.833rem;
-        }
+    .img-welcome div:nth-child(2) {
+        padding-right: 8rem;
+        margin-top: -2rem;
     }
 
-    /* --- Fin BreakPoints --- */
-
-
-
-
-
-    /* --- Comienzo Seccion INDEX CSS --- */
-
-    .navbar {
-
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-        background-color: var(--primary-color);
-
+    .img-welcome div:last-child {
+        padding-left: 22rem;
+        margin-top: -20rem;
     }
-
-    .navbar img:first-child {
-
-        width: 3.875rem;
-        height: 3.292rem;
-        margin-top: 0.3rem;
-        margin-bottom: -0.4rem;
-
-    }
-
-    .navbar img:hover {
-
-        transform: scale(1.2);
-        transition: all 0.3s;
-    }
-
-    .navbar div:first-child {
-
-        padding-left: 2rem;
-
-    }
-
-    #logo {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    #logo-letter {
-
-        display: inline-block;
-        color: var(--main-bg-color);
-
-    }
-
-    #logo-letter p:first-child {
-
-        font-size: 1.667rem;
-        font-weight: bold;
-
-    }
-
-    #logo-letter p:nth-child(2) {
-
-        font-size: 0.833rem;
-        font-weight: bold;
-
-    }
-
-
-
-    .links-navbar {
-
-        display: inline-flex;
-        list-style: none;
-        flex-direction: row;
-
-
-    }
-
-
-    .links-navbar a {
-
-        color: var(--text-color-primary);
-        text-decoration: none;
-        font-size: 1rem;
-
-    }
-
-    .links-navbar li {
-
-        padding: 0 1rem;
-
-    }
-
-    .links-navbar li:hover {
-
-
-        transform: scale(1.2);
-        transition: all 0.3s;
-    }
-
-    .logo-redes-navbar {
-
-        display: flex;
-        margin-right: 2.5rem;
-        flex-direction: row;
-
-    }
-
-    .logo-redes-navbar img:first-child {
-
-        max-width: 2.083rem;
-        max-height: 2.083rem;
-
-    }
-
-    .logo-redes-navbar img:nth-child(2) {
-
-        max-width: 2.083rem;
-        max-height: 2.083rem;
-
-    }
-
-    /* Fin NavBar */
-
-    /*Main-Welcome*/
-
-
-    .main-welcome {
-
-        display: flex;
-        background-color: var(--fifth-color);
-
-    }
-
-    .welcome-text {
-
-        margin-top: 8rem;
-        margin-left: 4rem;
-
-    }
-
-    .welcome-text p:first-child {
-
-        font-size: 2.083rem;
-        font-weight: bold;
-
-    }
-
-    .img-welcome {
-
-        margin-top: 2rem;
-        margin-left: 2rem;
-        margin-right: 1rem;
-
-    }
-
 
     .banner-map {
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 2rem;
-        width: 17.208rem;
-        height: 4.167rem;
-        color: var(--main-bg-color);
-        background-color: var(--fourth-color);
-        border-radius: 5px;
-
-    }
-
-    .banner-map img:first-child {
-
-        max-width: 3.333rem;
-        max-height: 3.264rem;
-
-    }
-
-    .last-banner-main {
-
-
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        padding-bottom: 2rem;
-        background-color: var(--fifth-color);
-
-
-    }
-
-    .last-banner-main img {
-
-        width: 2.5rem;
-        height: 2.5rem;
-        margin-left: 1rem;
-
+        margin-left: 2rem;
     }
 
     #banner-main-1,
     #banner-main-2,
     #banner-main-3 {
-        display: flex;
-        align-items: center;
-        margin-top: 1.5rem;
-        max-width: 17.5rem;
-        max-height: 3.833rem;
-        background-color: var(--primary-color);
-
-    }
-
-    .last-banner-main span {
-
-        margin: 1.5rem;
-        white-space: nowrap;
-        font-size: 1.083rem;
-        color: #E5E5E5;
-
-    }
-
-
-    /*Fin Main-Welcome
-
-
-
-
-/* --- Fin Seccion Index --- */
-
-    /* --- Comienzo Seccion Productos  --- */
-
-
-
-
-
-
-
-
-
-
-    /* --- Fin Seccion Productos--- */
-
-    /* --- Comienzo Seccion Nosotros  --- */
-
-    .redes-sociales {
-        border-radius: 15px;
-        display: flex;
-        justify-content: center;
-
-    }
-
-    .contRedes-sociales {
-        width: 70%;
-        padding: 2rem;
-        border-radius: 15px;
-    }
-
-    .redes-sociales .row {
-        background-color: var(--tertiary-color);
-
-    }
-
-    .redes-sociales_texto {
-        text-decoration: underline;
-        color: var(--text-color-primary);
-    }
-
-    .contRedes-sociales1 {
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        padding-top: 3rem;
-    }
-
-    .contRedes-sociales2 {
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-        padding-bottom: 3rem;
-
-    }
-
-    .redes-sociales .row .col {
-        display: flex;
-        justify-content: center;
-    }
-
-
-    .presentacion-container {
-        margin: auto;
-        display: flex;
-        justify-content: center;
-    }
-
-    .presentacion-container .presentacion {
-        background-color: var(--bg-container-form);
-        border-radius: 15px;
-        width: 50%;
-        text-align: center;
-        padding: 2rem;
-        margin: 1rem 0;
-    }
-
-    .presentacion-container .presentacion p {
-        text-align: justify;
-    }
-
-
-
-    .tel-contacto {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-        margin: 2rem 0;
-    }
-
-    .pedido {
-        padding-top: 2rem;
-        color: var(--text-color-primary);
-        text-decoration: underline;
-    }
-
-    .pedido h5 {
-        width: 60%;
-    }
-
-    .numero-tel {
-        padding-bottom: 1rem;
-    }
-
-    .tel-contacto>.row {
-        text-align: center;
-        background-color: var(--secondary-color);
-        display: flex;
-        justify-content: center;
-        width: 50%;
-        margin: auto;
-    }
-
-    .tel-contacto .row .col-6 {
-        background-color: var(--tertiary-color);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        height: 60%;
-        border-radius: 15px;
-        padding: 1rem 0;
-    }
-
-    .tel-contacto .row .col-6 .numeroDeTelefono {
-        margin: auto;
-        color: var(--text-color-primary);
-    }
-
-    .numero-tel_icon {
-        margin: auto;
-    }
-
-    /* --- Fin Seccion Nosotros--- */
-
-    /* --- Comienzo Seccion Contactos  --- */
-
-    .container-contactanos {
-        width: 1200px;
-        margin: 0 auto;
-    }
-
-    .contactanos-title {
-        background-color: var(--tertiary-color);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 6rem;
-        border-radius: 1rem;
-        margin: 2rem 0;
-        color: var(--text-color-primary);
-        padding: 2rem 0;
-    }
-
-    .contactanos-title img {
-        width: 10rem;
-    }
-
-    .contactanos-title h4 {
-        font-size: 1.6rem;
-        position: relative;
-    }
-
-    .contactanos-title h4::after {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        /* Centrar horizontalmente */
-        transform: translateX(-50%);
-        /* Centrar horizontalmente */
-        width: 120%;
-        height: 2px;
-        /* Altura de la línea */
-        background-color: var(--text-color-primary);
-        margin-top: 1rem;
-    }
-
-    .container-form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        background-color: var(--bg-container-form);
-        border: 1px solid var(--secondary-color);
-        padding: 3rem;
-        border-radius: 1rem;
-    }
-
-    .contactanos-formulario {
-        background-color: var(--secondary-color);
-        padding: 2rem 0;
-        color: var(--text-color-primary);
-        border-radius: 1rem;
-    }
-
-    .contactanos-formulario h3 {
-        text-align: center;
-        margin-top: 2rem;
-        margin-bottom: .5rem;
-        position: relative;
-    }
-
-    .contactanos-formulario h3::after {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        /* Centrar horizontalmente */
-        transform: translateX(-50%);
-        /* Centrar horizontalmente */
-        width: 20%;
-        height: 2px;
-        /* Altura de la línea */
-        background-color: var(--text-color-primary);
-        margin-top: .3rem;
-    }
-
-    .contactanos-formulario form {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        width: 60rem;
-        margin-top: 2rem;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contactanos-formulario label {
-        grid-column: 1;
-        text-align: center;
-        margin-top: 2rem;
-    }
-
-    .contactanos-formulario input,
-    textarea {
-        border: none;
-        grid-column: 2;
-        background-color: var(--bg-container-form);
-        border-radius: .5rem;
-        padding: .7rem;
-        margin-top: 2rem;
-        width: 75%;
-    }
-
-    .contactanos-formulario textarea {
-        height: 20rem;
-    }
-
-    .form-button {
-        margin: 3rem 0;
-        background-color: var(--bg-button-enviar);
-        color: white;
-        font-size: 24px;
-        border: none;
-        padding: .5rem 4rem;
-        border-radius: 0.5rem;
-        cursor: pointer;
-    }
-
-    .form-button:hover {
-        background-color: var(--bg-button-enviar-dark);
-        transition: .6s;
-    }
-
-    /* --- Fin Seccion Contacto--- */
-/* --- Google Fonts --- */
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
-* {
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-/* --- Fin de Google Fonts --- */
-
-
-/* --- Paleta de Colores  --- */
-
-:root {
-
-    --main-bg-color: #E5E5E5;
-    --primary-color: #20964F;
-    --secondary-color: #4A7AD3;
-    --tertiary-color: #A859C3;
-    --fourth-color: #DD4D4D;
-    --fifth-color: #FFEDCC;
-    --text-color-primary: #FFFFFF;
-    --text-color-secondary: #2E2929;
-    --bg-container-form: #EDEDED;
-    --bg-button-enviar: #28B15F;
-    --bg-button-enviar-dark: #18723c;
-}
-
-/* --- Fin Paleta de Colores --- */
-
-
-/* --- Fuente --- */
-
-
-body {
-
-    font-family: Rubik, Roboto, sans-serif;
-    font-size: 24px;
-}
-
-/* --- Fin Fuente --- */
-
-
-/* --- GRID --- */
-
-.main-container {
-
-    display: grid;
-    margin: 0 auto;
-    width: 100%;
-    grid-template:
-
-        "navbar" 1fr
-        "main-welcome" 10fr
-        "carrousel-promotions" 5fr
-        "orders-banner" 5fr
-        "sales-section" 10fr
-        "footer" 3fr;
-
-
-    .navbar {
-
-        grid-area: navbar;
-    }
-
-
-    .main-welcome {
-
-        grid-area: main-welcome;
-
-    }
-
-    .carrousel-promotions {
-
-        grid-area: carrousel-promotions;
-
-    }
-
-    .orders-banner {
-
-        grid-area: orders-banner;
-
-    }
-
-    .sales-section {
-
-        grid-area: sales-section
-    }
-
-    .footer {
-        grid-area: footer;
-
-    }
-
-
-    /* --- Fin de Grid --- */
-
-
-    /* --- BreakPoints --- */
-
-    /* --- Los breakpoints estan configurados de esta manera 
-        porque en el modo de Mobile quiero que se muestre el navbar en estilo hamburguesa
-        y el carrousel-promotions y en modo desktop quiero que se muestre tal cual como esta en
-        el diseño original de figma, esto aun esta en "veremos" y a decision de ustedes --- */
-
-
-    @media (min-width:760px) {
-
-        grid-template: "navbar" 2fr
-            "main-welcome" 25fr
-            "carrousel-promotions" 14fr
-            "orders-banner" 14fr
-            "sales-section" 25fr
-            "footer" 5fr;
-
-        .links-navbar,
-        .logo-redes-navbar {
-
-            flex-direction: row;
-
-        }
-
-    }
-
-    @media (min-width: 1024px) {
-
-        grid-template: "navbar" 2fr
-            "main-welcome" 25fr
-            "carrousel-promotions" 14fr
-            "orders-banner" 14fr
-            "sales-section" 25fr
-            "footer" 5fr;
-
-        .links-navbar,
-        .logo-redes-navbar {
-
-            flex-direction: row;
-
-        }
-
-
-        .img-welcome div:first-child {
-
-            padding-left: 10rem;
-
-        }
-
-        .img-welcome div:nth-child(2) {
-
-            padding-right: 8rem;
-            margin-top: -2rem;
-
-        }
-
-        .img-welcome div:last-child {
-
-            padding-left: 22rem;
-            margin-top: -20rem
-        }
-
-        .banner-map {
-
-            margin-left: 2rem;
-
-        }
+        margin-left: 1.5rem;
+        width: 17.5rem;
+        height: 3.833rem;
     }
 }
 
@@ -870,7 +153,6 @@ body {
     justify-content: space-between;
     flex-wrap: nowrap;
     background-color: var(--primary-color);
-    padding: 1rem;
 
 }
 
@@ -878,6 +160,9 @@ body {
 
     width: 3.875rem;
     height: 3.292rem;
+    margin-top: 0.3rem;
+    margin-bottom: -0.4rem;
+
 }
 
 .navbar img:hover {
@@ -981,16 +266,15 @@ body {
 
 .main-welcome {
 
-    display: inline-flex;
+    display: flex;
     background-color: var(--fifth-color);
 
 }
 
-
 .welcome-text {
 
-    margin-top: 5rem;
-    margin-left: 3rem;
+    margin-top: 8rem;
+    margin-left: 4rem;
 
 }
 
@@ -1001,17 +285,12 @@ body {
 
 }
 
-.welcome-text article:nth-child(2) {
-
-    font-size: 0.833rem;
-
-}
-
 .img-welcome {
 
     margin-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 1rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+
 }
 
 
@@ -1036,8 +315,318 @@ body {
 
 }
 
+.last-banner-main {
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+    background-color: var(--fifth-color);
+
+
+}
+
+.last-banner-main img {
+
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 1rem;
+
+}
+
+#banner-main-1,
+#banner-main-2,
+#banner-main-3 {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    max-width: 17.5rem;
+    max-height: 3.833rem;
+    background-color: var(--primary-color);
+
+}
+
+.last-banner-main span {
+
+    margin: 1.5rem;
+    white-space: nowrap;
+    font-size: 1.083rem;
+    color: #E5E5E5;
+
+}
+
 
 /*Fin Main-Welcome
+
+
+
+
+/* --- Fin Seccion Index --- */
+
+/* --- Comienzo Seccion Productos  --- */
+
+
+
+
+
+
+
+
+
+
+/* --- Fin Seccion Productos--- */
+
+/* --- Comienzo Seccion Nosotros  --- */
+
+.redes-sociales {
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contRedes-sociales {
+    width: 70%;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.redes-sociales .row {
+    background-color: var(--tertiary-color);
+
+}
+
+.redes-sociales_texto {
+    text-decoration: underline;
+    color: var(--text-color-primary);
+}
+
+.contRedes-sociales1 {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-top: 3rem;
+}
+
+.contRedes-sociales2 {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-bottom: 3rem;
+
+}
+
+.redes-sociales .row .col {
+    display: flex;
+    justify-content: center;
+}
+
+
+.presentacion-container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.presentacion-container .presentacion {
+    background-color: var(--bg-container-form);
+    border-radius: 15px;
+    width: 50%;
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+.presentacion-container .presentacion p {
+    text-align: justify;
+}
+
+
+
+.tel-contacto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.pedido {
+    padding-top: 2rem;
+    color: var(--text-color-primary);
+    text-decoration: underline;
+}
+
+.pedido h5 {
+    width: 60%;
+}
+
+.numero-tel {
+    padding-bottom: 1rem;
+}
+
+.tel-contacto>.row {
+    text-align: center;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+}
+
+.tel-contacto .row .col-6 {
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 60%;
+    border-radius: 15px;
+    padding: 1rem 0;
+}
+
+.tel-contacto .row .col-6 .numeroDeTelefono {
+    margin: auto;
+    color: var(--text-color-primary);
+}
+
+.numero-tel_icon {
+    margin: auto;
+}
+
+/* --- Fin Seccion Nosotros--- */
+
+/* --- Comienzo Seccion Contactos  --- */
+
+.container-contactanos {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.contactanos-title {
+    background-color: var(--tertiary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    border-radius: 1rem;
+    margin: 2rem 0;
+    color: var(--text-color-primary);
+    padding: 2rem 0;
+}
+
+.contactanos-title img {
+    width: 10rem;
+}
+
+.contactanos-title h4 {
+    font-size: 1.6rem;
+    position: relative;
+}
+
+.contactanos-title h4::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    /* Centrar horizontalmente */
+    transform: translateX(-50%);
+    /* Centrar horizontalmente */
+    width: 120%;
+    height: 2px;
+    /* Altura de la línea */
+    background-color: var(--text-color-primary);
+    margin-top: 1rem;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--bg-container-form);
+    border: 1px solid var(--secondary-color);
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+.contactanos-formulario {
+    background-color: var(--secondary-color);
+    padding: 2rem 0;
+    color: var(--text-color-primary);
+    border-radius: 1rem;
+}
+
+.contactanos-formulario h3 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+    position: relative;
+}
+
+.contactanos-formulario h3::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    /* Centrar horizontalmente */
+    transform: translateX(-50%);
+    /* Centrar horizontalmente */
+    width: 20%;
+    height: 2px;
+    /* Altura de la línea */
+    background-color: var(--text-color-primary);
+    margin-top: .3rem;
+}
+
+.contactanos-formulario form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 60rem;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactanos-formulario label {
+    grid-column: 1;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contactanos-formulario input,
+textarea {
+    border: none;
+    grid-column: 2;
+    background-color: var(--bg-container-form);
+    border-radius: .5rem;
+    padding: .7rem;
+    margin-top: 2rem;
+    width: 75%;
+}
+
+.contactanos-formulario textarea {
+    height: 20rem;
+}
+
+.form-button {
+    margin: 3rem 0;
+    background-color: var(--bg-button-enviar);
+    color: white;
+    font-size: 24px;
+    border: none;
+    padding: .5rem 4rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: var(--bg-button-enviar-dark);
+    transition: .6s;
+}
+
+/* --- Fin Seccion Contacto--- */
+
 
 /* --- Footer ---*/
 
@@ -1055,6 +644,13 @@ body {
     width: 3.2rem;
 }
 
+.footer img:hover {
+
+    transform: scale(1.2);
+    transition: all 0.3s;
+
+}
+
 .logo-footer {
     display: flex;
     align-items: center;
@@ -1062,7 +658,7 @@ body {
 }
 
 
-/* --- Fin Seccion Index --- */
+/* --- Footer --- */
 
 /* --- Comienzo Seccion Productos  --- */
 
