@@ -106,44 +106,6 @@ body {
 
 /* --- Fin de Grid --- */
 
-
-/* --- BreakPoints --- */
-
-
-@media (min-width: 1024px) {
-    .img-welcome div:first-child {
-        padding-left: 10rem;
-    }
-
-    .img-welcome div:nth-child(2) {
-        padding-right: 8rem;
-        margin-top: -2rem;
-    }
-
-    .img-welcome div:last-child {
-        padding-left: 22rem;
-        margin-top: -20rem;
-    }
-
-    .banner-map {
-        margin-left: 2rem;
-    }
-
-    #banner-main-1,
-    #banner-main-2,
-    #banner-main-3 {
-        margin-left: 1.5rem;
-        width: 17.5rem;
-        height: 3.833rem;
-    }
-}
-
-/* --- Fin BreakPoints --- */
-
-
-
-
-
 /* --- Comienzo Seccion INDEX CSS --- */
 
 .navbar {
@@ -338,6 +300,7 @@ body {
 #banner-main-1,
 #banner-main-2,
 #banner-main-3 {
+
     display: flex;
     align-items: center;
     margin-top: 1.5rem;
@@ -352,15 +315,79 @@ body {
     margin: 1.5rem;
     white-space: nowrap;
     font-size: 1.083rem;
-    color: #E5E5E5;
+    color: var(--text-color-primary);
 
 }
 
 
 /*Fin Main-Welcome
 
+/*Carrousel Promotions */
+
+.carrousel-promotions {
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.carrousel-promotions div:first-child {
+
+    width: 40rem;
+    height: 4.417rem;
+    margin-top: 2rem;
+    background-color: var(--bg-button-enviar);
+    color: var(--text-color-primary);
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+#promotions-banner p:first-child {
+
+    margin-top: 1.2rem;
+    margin-left: 2rem;
+}
+
+/* Media Querys */
+
+@media (min-width: 1024px) {
+    .img-welcome div:first-child {
+        padding-left: 10rem;
+    }
+
+    .img-welcome div:nth-child(2) {
+        padding-right: 8rem;
+        margin-top: -2rem;
+    }
+
+    .img-welcome div:last-child {
+        padding-left: 22rem;
+        margin-top: -20rem;
+    }
+
+    .banner-map {
+        margin-left: 2rem;
+    }
+
+    #banner-main-1,
+    #banner-main-2,
+    #banner-main-3 {
+        margin-left: 1.5rem;
+        width: 17.5rem;
+        height: 3.833rem;
+    }
+
+    .carrousel-promotions div:first-child {
+
+        width: 67.5rem;
+        height: 4.417rem;
 
 
+    }
+}
+
+/* Fin Media Querys */
 
 /* --- Fin Seccion Index --- */
 
