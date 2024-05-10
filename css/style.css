@@ -794,7 +794,7 @@ textarea {
 /* --- Comienzo Seccion Contactos  --- */
 
 .container-contactanos {
-    width: 1200px;
+    width: 75rem;
     margin: 0 auto;
 }
 
@@ -880,6 +880,7 @@ textarea {
     grid-template-columns: 1fr 2fr;
     width: 60rem;
     margin-top: 2rem;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
 }
@@ -919,6 +920,72 @@ textarea {
 .form-button:hover {
     background-color: var(--bg-button-enviar-dark);
     transition: .6s;
+}
+
+@media (max-width: 768px) {
+
+    .contactanos-title img {
+        width: 7rem;
+    }
+
+    .contactanos-title h4 {
+        font-size: 1.4rem;
+    }
+
+    .contactanos-title h4::after {
+        width: 110%;
+    }
+
+    .container-contactanos {
+        width: 45rem;
+    }
+
+    .contactanos-formulario {
+        width: 35rem;
+    }
+
+    .contactanos-formulario form {
+        width: 30rem;
+    }
+
+    .contactanos-formulario input, textarea  {
+        width: 90%;
+}
+}
+
+@media (max-width: 390px) {
+    
+    .container-contactanos {
+        width: 20rem;
+    }
+
+    .contactanos-title img {
+        width: 10rem;
+    }
+
+    .contactanos-title {
+        flex-direction: column;
+    }
+
+    .contactanos-title h4 {
+        font-size: 1.4rem;
+    }
+
+    .contactanos-title h4::after {
+        display: none;
+    }
+
+    .contactanos-formulario {
+        width: 35rem;
+    }
+
+    .contactanos-formulario form {
+        width: 30rem;
+    }
+
+    .contactanos-formulario input, textarea  {
+        width: 90%;
+}
 }
 
 /* --- Fin Seccion Contacto--- */
