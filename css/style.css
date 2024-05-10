@@ -249,9 +249,25 @@ body {
 
 .img-welcome {
 
+    display: block;
     margin-top: 2rem;
     margin-left: 2rem;
     margin-right: 1rem;
+    
+
+}
+
+.img-welcome img {
+
+
+    width: 15.042rem;
+    height: 15.25rem;
+
+}
+
+.img-welcome div {
+
+    padding-bottom: 1rem;
 
 }
 
@@ -279,15 +295,15 @@ body {
 
 .last-banner-main {
 
-
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: space-around;
-    padding-bottom: 2rem;
+    padding: 2rem;
     background-color: var(--fifth-color);
 
-
 }
+
 
 .last-banner-main img {
 
@@ -302,10 +318,9 @@ body {
 #banner-main-3 {
 
     display: flex;
-    align-items: center;
+    width: 100%;
     margin-top: 1.5rem;
-    max-width: 17.5rem;
-    max-height: 3.833rem;
+    align-items: center;
     background-color: var(--primary-color);
 
 }
@@ -332,6 +347,7 @@ body {
 }
 
 .promotions-banner {
+
     display: block;
     width: 100%;
     height: 4.417rem;
@@ -370,10 +386,14 @@ body {
 
 .promotions-cards p {
 
-    font-weight: bold;
-    text-align: center;
     margin-top: 2rem;
-    
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-bottom: var(--text-color-primary);
+
+
+
 }
 
 .promotions-cards div:first-child {
@@ -394,13 +414,32 @@ body {
 
 }
 
+.promotions-cards img {
 
+    width: 10.708rem;
+    height: 9.875rem;
+    display: block;
+    margin: auto;
+    align-content: center;
+
+}
 
 
 
 /* Media Querys */
 
+
+@media (max-width:768px) {}
+
+
 @media (min-width: 1024px) {
+
+    .img-welcome {
+
+        margin-bottom: 1rem;
+
+    }
+
     .img-welcome div:first-child {
         padding-left: 10rem;
     }
@@ -431,6 +470,27 @@ body {
 
 
         flex-direction: row;
+
+
+    }
+
+    .last-banner-main {
+
+
+        flex-direction: row;
+    }
+
+
+    .img-welcome div:nth-child(2) {
+
+        margin-left: 1rem;
+
+    }
+
+    .img-welcome div:last-child {
+
+        padding-top: 5rem;
+        margin-left: -5rem;
 
 
     }
