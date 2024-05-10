@@ -259,6 +259,36 @@ body {
 
 }
 
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo {
+        margin: 2rem 0 1rem -3rem;
+    }
+
+    .logo-redes-navbar {
+        margin: 1rem 0 1rem 3rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .links-navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #logo {
+        margin-left: -6rem;
+    }
+
+    .logo-redes-navbar {
+        margin-left: .5rem;
+    }
+}
+
 /* Fin NavBar */
 
 /*Main-Welcome*/
@@ -657,6 +687,16 @@ textarea {
     gap: .7rem;
 }
 
+@media (max-width: 390px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .logo-footer {
+        margin: .5rem 0 1.5rem -2rem;
+    }
+}
+
 
 /* --- Footer --- */
 
@@ -824,12 +864,9 @@ textarea {
     position: absolute;
     top: 100%;
     left: 50%;
-    /* Centrar horizontalmente */
     transform: translateX(-50%);
-    /* Centrar horizontalmente */
     width: 120%;
     height: 2px;
-    /* Altura de la línea */
     background-color: var(--text-color-primary);
     margin-top: 1rem;
 }
@@ -944,6 +981,10 @@ textarea {
         width: 35rem;
     }
 
+    .contactanos-formulario h3::after {
+        width: 35%;
+    }
+
     .contactanos-formulario form {
         width: 30rem;
     }
@@ -961,26 +1002,45 @@ textarea {
 
     .contactanos-title img {
         width: 10rem;
+        margin-top: -3rem;
     }
 
     .contactanos-title {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        padding-top: 3rem;
     }
 
     .contactanos-title h4 {
         font-size: 1.4rem;
+        text-align: center;
     }
 
     .contactanos-title h4::after {
-        display: none;
+        width: 70%;
+        top: 150%;
+        margin: 0;
+    }
+
+    .container-form {
+        padding: 0;
     }
 
     .contactanos-formulario {
-        width: 35rem;
+        width: 20rem;
+    }
+
+    .contactanos-formulario h3::after {
+        width: 60%;
     }
 
     .contactanos-formulario form {
-        width: 30rem;
+        width: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
     }
 
     .contactanos-formulario input, textarea  {
