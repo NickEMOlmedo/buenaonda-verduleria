@@ -54,13 +54,13 @@ body {
     width: 100%;
     grid-template:
 
-        "navbar" 1fr
-        "main-welcome" 10fr
+        "navbar" auto
+        "main-welcome" auto
         "banner-main-welcome" auto
-        "carrousel-promotions" 5fr
-        "orders-banner" 5fr
-        "sales-section" 10fr
-        "footer" 3fr;
+        "carrousel-promotions" auto
+        "orders-banner" auto
+        "sales-section" auto
+        "footer" auto;
 
 
     .navbar {
@@ -105,44 +105,6 @@ body {
 }
 
 /* --- Fin de Grid --- */
-
-
-/* --- BreakPoints --- */
-
-
-@media (min-width: 1024px) {
-    .img-welcome div:first-child {
-        padding-left: 10rem;
-    }
-
-    .img-welcome div:nth-child(2) {
-        padding-right: 8rem;
-        margin-top: -2rem;
-    }
-
-    .img-welcome div:last-child {
-        padding-left: 22rem;
-        margin-top: -20rem;
-    }
-
-    .banner-map {
-        margin-left: 2rem;
-    }
-
-    #banner-main-1,
-    #banner-main-2,
-    #banner-main-3 {
-        margin-left: 1.5rem;
-        width: 17.5rem;
-        height: 3.833rem;
-    }
-}
-
-/* --- Fin BreakPoints --- */
-
-
-
-
 
 /* --- Comienzo Seccion INDEX CSS --- */
 
@@ -368,6 +330,7 @@ body {
 #banner-main-1,
 #banner-main-2,
 #banner-main-3 {
+
     display: flex;
     align-items: center;
     margin-top: 1.5rem;
@@ -382,15 +345,130 @@ body {
     margin: 1.5rem;
     white-space: nowrap;
     font-size: 1.083rem;
-    color: #E5E5E5;
+    color: var(--text-color-primary);
 
 }
 
 
 /*Fin Main-Welcome
 
+/*Carrousel Promotions */
+
+.carrousel-promotions {
+
+    display: block;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.promotions-banner {
+    display: block;
+    width: 100%;
+    height: 4.417rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    background-color: var(--bg-button-enviar);
+    color: var(--text-color-primary);
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.promotions-banner p:first-child {
+    margin-left: 3rem;
+    padding-top: 1rem;
+}
+
+.promotions-cards {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.promotions-cards div {
+
+    width: 17.792rem;
+    height: 19.542rem;
+    margin-top: 2rem;
+    color: var(--text-color-primary);
 
 
+}
+
+.promotions-cards p {
+
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem;
+    
+}
+
+.promotions-cards div:first-child {
+
+    background-color: var(--bg-button-enviar);
+
+}
+
+.promotions-cards div:nth-child(2) {
+
+    background-color: var(--tertiary-color);
+
+}
+
+.promotions-cards div:last-child {
+
+    background-color: var(--secondary-color);
+
+}
+
+
+
+
+
+/* Media Querys */
+
+@media (min-width: 1024px) {
+    .img-welcome div:first-child {
+        padding-left: 10rem;
+    }
+
+    .img-welcome div:nth-child(2) {
+        padding-right: 8rem;
+        margin-top: -2rem;
+    }
+
+    .img-welcome div:last-child {
+        padding-left: 22rem;
+        margin-top: -20rem;
+    }
+
+    .banner-map {
+        margin-left: 2rem;
+    }
+
+    #banner-main-1,
+    #banner-main-2,
+    #banner-main-3 {
+        margin-left: 1.5rem;
+        width: 17.5rem;
+        height: 3.833rem;
+    }
+
+    .promotions-cards {
+
+
+        flex-direction: row;
+
+
+    }
+}
+
+
+
+/* Fin Media Querys */
 
 /* --- Fin Seccion Index --- */
 
