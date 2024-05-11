@@ -251,33 +251,36 @@ body {
 
 .img-welcome {
 
-    display: flex;
-    width: 50%;
+    display: block;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
     margin-top: 2rem;
     margin-left: 2rem;
-    flex-wrap: wrap;
-    gap: 0.5rem;
 
 }
 
 .img-welcome img {
 
-    width: 80%;
-    
-}
-
-
-.img-welcome div:first-child{
-
-
+    width: 45%;
 
 }
 
-.img-welcome div:nth-child(2){
+.img-welcome img:first-child {
 
+    align-content: baseline;
 
-    
+    margin-left: 8rem;
 }
+
+.img-welcome img:nth-child(2) {
+
+    margin-left: rem;
+
+
+}
+
+.img-welcome img:last-child {}
 
 .banner-map {
 
@@ -355,11 +358,12 @@ body {
 
 .promotions-banner {
 
-    display: block;
-    width: 100%;
+    display: flex;
     height: 4.417rem;
     margin: 0 auto;
     margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
     background-color: var(--bg-button-enviar);
     color: var(--text-color-primary);
     font-size: 1.5rem;
@@ -367,10 +371,7 @@ body {
 
 }
 
-.promotions-banner p:first-child {
-    margin-left: 3rem;
-    padding-top: 1rem;
-}
+
 
 .promotions-cards {
 
@@ -388,18 +389,20 @@ body {
     flex-direction: row;
     color: var(--text-color-primary);
 
-
 }
 
 .promotions-cards p {
 
     margin-top: 2rem;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: bold;
-    border-bottom: var(--text-color-primary);
 
+}
 
+.subrayado {
+
+    text-decoration: 0.3rem underline;
 
 }
 
@@ -415,28 +418,46 @@ body {
 
 }
 
+.promotions-cards div:first-child img {
+    width: 10.708rem;
+    height: 9.875rem;
+}
+
+.promotions-cards div:nth-child(2) img {
+
+    display: inline-flex;
+    width: 30%;
+    height: 30%;
+    margin-top: 2rem;
+    flex-direction: row;
+}
+
 .promotions-cards div:last-child {
 
     background-color: var(--secondary-color);
 
 }
 
-.promotions-cards img {
+.promotions-cards div:last-child img {
 
-    width: 10.708rem;
-    height: 9.875rem;
-    display: block;
-    margin: auto;
-    align-content: center;
+    width: 43%;
 
 }
 
+
+.promotions-cards img {
+
+    display: flex;
+    margin: 0 auto;
+
+
+}
 
 
 /* Media Querys */
 
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     .navbar {
         flex-direction: column;
         align-items: center;
@@ -452,9 +473,21 @@ body {
 
     .img-welcome {
 
+        display: flex;
+        margin-top: 4rem;
+        margin-left: 1rem;
         flex-direction: column;
+        gap: 0.5rem;
+
 
     }
+
+    .img-welcome img {
+
+        width: 65%;
+
+    }
+
 
     .last-banner-main {
 
@@ -467,9 +500,28 @@ body {
         flex-direction: column;
 
     }
+
+    .img-welcome img:first-child {
+
+        margin: 0 auto;
+    }
+
+    .img-welcome img:nth-child(2) {
+
+        margin: 0 auto;
+
+    }
+
+    .img-welcome img:last-child {
+
+        margin: 0 auto;
+
+    }
+
+
 }
 
-@media (max-width: 390px) {
+@media (max-width: 480px) {
 
     .links-navbar {
         flex-direction: column;
