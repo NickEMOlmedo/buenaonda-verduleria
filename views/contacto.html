@@ -42,22 +42,47 @@
         <div class="container-form">
             <div class="contactanos-formulario">
                 <h3> ¡Contactanos! </h3>
-                <form action="">
-                        <label for="">Nombre:</label>
-                        <input type="text" placeholder="Ingrese su Nombre">
+                <form id="contactanos-formulario" action="">
+                        <label for="nombre">Nombre:</label>
+                        <input id="nombre" type="text" placeholder="Ingrese su Nombre">
     
                     
-                        <label for="">Apellido:</label>
-                        <input type="text" placeholder="Ingrese su Apellido">
+                        <label for="apellido">Apellido:</label>
+                        <input id="apellido" type="text" placeholder="Ingrese su Apellido">
     
-                        <label for="">Email:</label>
-                        <input type="email" placeholder="Ingrese su Email">
-    
-                        <label for="">Mensaje:</label>
-                        <textarea name="" id=""></textarea>
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" placeholder="Ingrese su Email">
+
+                        <label for="genero">Género:</label>
+                        <div id="form-genero">
+                            <label for="femenino">
+                                <input value="femenino" type="radio" name="genero" id="femenino">Femenino
+                            </label>
+                            <label for="masculino">
+                                <input value="masculino" type="radio" name="genero" id="masculino">Masculino
+                            </label>
+                            <label for="otro">
+                                <input value="otro" type="radio" name="genero" id="otro">Otro
+                            </label>
+                        </div>
+                        
+                        <label for="motivo">Motivo:</label>
+                        <select class="form-motivo" name="" id="motivo">
+                            <option value="" selected disabled>--- Seleccione una opcion ---</option>
+                            <option value="pedidos mayoristas">Pedidos mayoristas</option>
+                            <option value="pedidos minoristas">Pedidos minoristas</option>
+                            <option value="reclamo">Reclamo</option>
+                            <option value="curriculum">Curriculum</option>
+                        </select>
+
+                        <label>Imágen:</label>
+                        <input class="form-img" type="file" src="" alt="">
+
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea name="" id="mensaje"></textarea>
                 </form>
 
-                <button class="form-button" type="submit">Enviar</button>
+                <input id="form-button" value="Enviar" type="submit"></input>
             </div>
         </div>
 
