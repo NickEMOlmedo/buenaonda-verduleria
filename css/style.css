@@ -268,19 +268,11 @@ body {
 
 .img-welcome img:first-child {
 
-    align-content: baseline;
-
     margin-left: 8rem;
+    margin-bottom: -1.5rem;
 }
 
-.img-welcome img:nth-child(2) {
 
-    margin-left: rem;
-
-
-}
-
-.img-welcome img:last-child {}
 
 .banner-map {
 
@@ -451,6 +443,48 @@ body {
     margin: 0 auto;
 
 
+}
+
+
+.orders-banner {
+
+    display: flex;
+    margin-top: 3rem;
+    align-items: center;
+   justify-content: center;
+   
+
+}
+
+.cuadrado-banner{
+
+    width: 90%;
+    height: 20rem;
+    background-color: var(--primary-color);
+    text-align: center;
+    align-items: center;
+
+}
+
+.cuadrado-banner p:first-child{
+
+margin-top: 5rem;
+
+}
+
+
+.orders-banner p:first-child {
+    
+    color: var(--text-color-primary);
+    font-size: 1.5rem;
+    font-weight: bold;
+   
+   
+}
+
+.orders-banner-tlf {
+
+    
 }
 
 
