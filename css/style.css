@@ -450,13 +450,25 @@ body {
 
     display: flex;
     margin-top: 3rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    justify-content: center;
     align-items: center;
-    width: 100%;
+   justify-content: center;
+   
+
+}
+
+.cuadrado-banner{
+
+    width: 90%;
     height: 20rem;
     background-color: var(--primary-color);
+    text-align: center;
+    align-items: center;
+
+}
+
+.cuadrado-banner p:first-child{
+
+margin-top: 5rem;
 
 }
 
