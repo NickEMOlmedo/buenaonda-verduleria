@@ -35,8 +35,7 @@
 
 /* --- Fuente --- */
 
-.row {
-}
+
 body {
 
     font-family: Rubik, Roboto, sans-serif;
@@ -730,10 +729,10 @@ margin-top: 5rem;
     margin: auto;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
 
     .contRedes-sociales {
-        width: 90%;
+        width: 80%;
 
     }
     .presentacion-container .presentacion {
@@ -746,7 +745,7 @@ margin-top: 5rem;
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 550px) {
 
 .contRedes-sociales {
     width: 100%;
