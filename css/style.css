@@ -449,42 +449,82 @@ body {
 .orders-banner {
 
     display: flex;
-    margin-top: 3rem;
     align-items: center;
-   justify-content: center;
-   
+    justify-content: center;
+    margin-top: 3.5rem;
+    
+
 
 }
 
-.cuadrado-banner{
+.cuadrado-banner {
 
     width: 90%;
     height: 20rem;
-    background-color: var(--primary-color);
     text-align: center;
     align-items: center;
+    background-color: var(--primary-color);
+    
 
 }
 
-.cuadrado-banner p:first-child{
+.cuadrado-banner p:first-child {
 
-margin-top: 5rem;
+    margin-top: 5rem;
 
 }
 
+.cuadrado-banner img {
+
+    display: flex;
+    margin-bottom: 2rem;
+    width: 100%;
+    padding: 0.5rem 12rem 0rem 12rem;
+}
+
+.orders-banner {
+
+display: inline-flex;
+
+}
 
 .orders-banner p:first-child {
-    
+
     color: var(--text-color-primary);
+    text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
-   
-   
+
+
+}
+
+.orders-banner img:nth-child(2){
+
+width: 50%;
+
+
 }
 
 .orders-banner-tlf {
 
+    display: flex;
+    width: 26.625rem;
+    height: 5rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    background-color: #4A7AD3;
+    border-radius: 20px;
+   
+
+
+}
+
+.orders-banner-tlf p:first-child {
     
+    margin: 0 auto;
+    margin-top: 1.80rem;
+
 }
 
 
@@ -552,6 +592,10 @@ margin-top: 5rem;
 
     }
 
+    .cuadrado-banner img {
+
+        padding: 0.5rem 3rem 0rem 3rem;
+    }
 
 }
 
@@ -592,6 +636,19 @@ margin-top: 5rem;
 
         flex-direction: column;
 
+    }
+
+    .cuadrado-banner img {
+
+        padding: 0.5rem 4rem 0rem 4rem;
+    }
+
+    .orders-banner-tlf {
+
+      
+        width: 15rem;
+        height: 5rem;
+      
     }
 }
 
@@ -1171,7 +1228,8 @@ textarea {
 }
 
 .contactanos-formulario input,
-textarea, select {
+textarea,
+select {
     border: none;
     grid-column: 2;
     background-color: var(--bg-container-form);
