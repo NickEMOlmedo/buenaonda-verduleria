@@ -1294,3 +1294,19 @@ textarea, select {
 }
 
 /* --- Fin Seccion Contacto--- */
+
+
+/* --- Javascript --- */
+
+.alerta {
+    grid-column: 2/3;
+    margin-top: .5rem;
+    width: 75%;
+    background-color: rgb(230, 0, 0);
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+/* --- Fin Javascript --- */
