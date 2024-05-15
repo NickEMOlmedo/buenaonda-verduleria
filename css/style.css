@@ -449,11 +449,7 @@ body {
 .orders-banner {
 
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 3.5rem;
-    
-
+    margin-top: 3rem;
 
 }
 
@@ -461,10 +457,9 @@ body {
 
     width: 90%;
     height: 20rem;
-    text-align: center;
-    align-items: center;
+    margin: 0 auto;
     background-color: var(--primary-color);
-    
+
 
 }
 
@@ -476,16 +471,9 @@ body {
 
 .cuadrado-banner img {
 
-    display: flex;
-    margin-bottom: 2rem;
-    width: 100%;
-    padding: 0.5rem 12rem 0rem 12rem;
-}
-
-.orders-banner {
-
-display: inline-flex;
-
+    display: block;
+    min-width: 65%;
+    margin: 1rem auto 2rem auto;
 }
 
 .orders-banner p:first-child {
@@ -495,13 +483,45 @@ display: inline-flex;
     font-size: 1.5rem;
     font-weight: bold;
 
+}
+
+.orders-banner img:nth-child(2) {
+
+    width: 50%;
+
 
 }
 
-.orders-banner img:nth-child(2){
+.contenedor-pedidos {
 
-width: 50%;
+    display: flex;
 
+}
+
+.contenedor-pedidos div:first-child {
+
+    margin-top: -2rem;
+
+}
+
+.img-whatsapp-pedidos img {
+
+    width: 90%;
+    padding-left: 3rem;
+
+}
+
+
+.contenedor-pedidos div:last-child {
+
+    margin-top: -1.8rem;
+    padding-right: 4.5rem;
+
+}
+
+.img-moto-pedidos img {
+
+    width: 120%;
 
 }
 
@@ -512,20 +532,19 @@ width: 50%;
     height: 5rem;
     margin: 0 auto;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     background-color: #4A7AD3;
     border-radius: 20px;
-   
-
 
 }
 
 .orders-banner-tlf p:first-child {
-    
-    margin: 0 auto;
-    margin-top: 1.80rem;
+
+    margin-top: 2rem;
+    margin-left: 4.5rem;
 
 }
+
 
 
 /* Media Querys */
@@ -592,10 +611,13 @@ width: 50%;
 
     }
 
-    .cuadrado-banner img {
+    .img-whatsapp-pedidos,
+    .img-moto-pedidos {
 
-        padding: 0.5rem 3rem 0rem 3rem;
+        display: none;
+
     }
+
 
 }
 
@@ -638,18 +660,22 @@ width: 50%;
 
     }
 
-    .cuadrado-banner img {
-
-        padding: 0.5rem 4rem 0rem 4rem;
-    }
-
     .orders-banner-tlf {
 
-      
+
         width: 15rem;
         height: 5rem;
-      
+
     }
+
+    .img-whatsapp-pedidos,
+    .img-moto-pedidos {
+
+        display: none;
+
+    }
+
+
 }
 
 
@@ -792,40 +818,49 @@ width: 50%;
         width: 80%;
 
     }
+
     .presentacion-container .presentacion {
-  
+
         width: 90%;
-     
+
     }
+
     .tel-contacto>.row {
-       width: 90%;
+        width: 90%;
     }
 }
 
 @media (max-width: 550px) {
 
-.contRedes-sociales {
-    width: 100%;
+    .contRedes-sociales {
+        width: 100%;
 
-}
-.redes-sociales .row {
-text-align: center;}
-.presentacion-container .presentacion{
+    }
 
-    width: 100%;
-    
+    .redes-sociales .row {
+        text-align: center;
+    }
+
+    .presentacion-container .presentacion {
+
+        width: 100%;
+
+    }
+
+    .tel-contacto>.row {
+        width: 100%;
+    }
+
+    .tel-contacto .row .col-6 .numeroDeTelefono {
+        font-size: small;
+    }
+
+    .numero-tel_icon img {
+        width: 100%;
+        height: 100%;
+    }
 }
-.tel-contacto>.row {
-   width: 100%;
-}
-.tel-contacto .row .col-6 .numeroDeTelefono {
-   font-size: small;
-}
-.numero-tel_icon img {
-   width: 100%;
-   height: 100%;
-}
-}
+
 /* --- Fin Seccion Nosotros--- */
 
 /* --- Comienzo Seccion Contactos  --- */
@@ -1289,7 +1324,7 @@ select {
 }
 
 @media (max-width: 768px) {
-    
+
     .alerta {
         width: 90%;
     }
