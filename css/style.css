@@ -17,6 +17,7 @@
 
 :root {
 
+    --bacground-page-color: #E5E5E5;
     --main-bg-color: #E5E5E5;
     --primary-color: #20964F;
     --secondary-color: #4A7AD3;
@@ -28,6 +29,8 @@
     --bg-container-form: #EDEDED;
     --bg-button-enviar: #28B15F;
     --bg-button-enviar-dark: #18723c;
+    --producs-background-white: #FBFBFB;
+    --second-color-products: #B9B1A7;
 }
 
 /* --- Fin Paleta de Colores --- */
@@ -40,6 +43,7 @@ body {
 
     font-family: Rubik, Roboto, sans-serif;
     font-size: 24px;
+    background-color: var(--bacground-page-color);
 }
 
 /* --- Fin Fuente --- */
@@ -547,11 +551,78 @@ body {
 }
 
 
+.sales-section {
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+
+.sales-tittle {
+
+    display: flex;
+    height: 4.417rem;
+    margin-top: 2rem;
+    align-items: center;
+    background-color: var(--bg-button-enviar);
+
+}
+
+.sales-tittle p {
+
+    color: var(--text-color-primary);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 2rem;
+}
+
+
+.products-cards {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    margin-top: 3rem;
+    gap: 2rem;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.card {
+
+    width: 17.25rem;
+    height: 22.125rem;
+    background-color: var(--cards-background-white);
+}
+
+.card img {
+
+    display: flex;
+    width: 17.25rem;
+    height: 11.292rem;
+
+}
+
+.card p {
+
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    color: var(--text-color-secondary);
+    font-weight: bold;
+}
+
+.card p:nth-child(2){
+
+    color: ();
+
+}
 
 /* Media Querys */
 
 
 @media (max-width: 960px) {
+
     .navbar {
         flex-direction: column;
         align-items: center;
@@ -612,15 +683,47 @@ body {
 
     }
 
-    .img-whatsapp-pedidos,
-    .img-moto-pedidos {
+    @media (min-width: 900px) {
 
-        display: none;
+        .contenedor-pedidos div:first-child {
+
+            margin-top: -2.2rem;
+            margin-left: 2rem;
+
+        }
+
+        .img-whatsapp-pedidos img {
+
+            width: 100%;
+            margin-left: -3rem;
+
+        }
+
+
+        .contenedor-pedidos div:last-child {
+
+            margin-top: -2rem;
+            padding-right: 2em;
+            margin-left: 3rem;
+
+        }
+
+        .img-moto-pedidos img {
+
+            width: 110%;
+
+        }
+
+        .orders-banner-tlf p {
+
+
+            margin-right: 3rem;
+
+        }
 
     }
-
-
 }
+
 
 @media (max-width: 480px) {
 
@@ -635,12 +738,6 @@ body {
 
     .logo-redes-navbar {
         margin-left: .5rem;
-    }
-
-    .img-welcome {
-
-        flex-direction: column;
-
     }
 
     .last-banner-main {
@@ -675,7 +772,6 @@ body {
         display: none;
 
     }
-
 
 }
 
