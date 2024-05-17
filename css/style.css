@@ -1150,6 +1150,146 @@ textarea {
 
 /* --- Comienzo Seccion Productos  --- */
 
+.contenedor{
+background-color: #4A7AD3;
+width: 80%;
+height: 470px;
+margin: 8%;
+display:flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: auto;
+}
+
+ p{
+color:#FFFFFF;
+font-family: Rubik;
+font-size: 36px;
+font-weight: 700;
+line-height: 42.66px;
+flex-direction:column ;
+width: 50%;
+position: relative;
+top: 30%;
+
+}
+
+.motodelivery{
+width: 200px;
+align-self: flex-end;
+position: relative;
+top:35%;
+}
+.icono-whatsapp{
+    width: 200px;
+    align-self: flex-start;
+    position:relative;
+    top:5%;
+    
+}
+button{
+background-color:#A859C3;
+color:#FFFFFF;
+ width: 639px;
+height: 120px;
+font-family: Rubik;
+font-size: 48px;
+font-weight: 700;
+line-height: 56.88px;
+text-align: center;
+position: relative;
+bottom: 20%;
+border-radius: 20px;
+
+}
+.segunda-nav{
+    background-color: #28B15F;
+    padding: 10px;
+    width: 85%;
+    border-radius: 20px;
+    display: flex;
+    margin:auto;
+    justify-content: center;
+}
+.segunda-nav ul{
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+}
+.segunda-nav ul li{
+    margin-right: 100px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: nowrap;
+
+
+}
+.segunda-nav ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.conteiner-productos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap:10px;
+    
+
+}
+.card{
+    width: 400px;
+    padding: 16px;
+    margin: 20px;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 10px ;
+    cursor: default;
+    gap: 16px;
+}
+.card img{
+    width: 100%;
+    height: 200%;
+
+}
+.card .contenido{
+    padding: 20px;
+;
+}
+.card .contenido h3{
+font-family: Rubik;
+font-size: 26px;
+font-weight: 700;
+line-height: 30.81px;
+text-align: left;
+
+}
+.card .contenido p{
+font-family: Roboto;
+font-size: 22px;
+font-weight: 500;
+line-height: 25.78px;
+text-align: left;
+color: #B9B1A7;
+;
+
+
+}
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 50px;
+    margin-top: 10px;
+    background-color: #28B15F;
+    color: #E5E5E5;
+    border-radius: 30px;
+    height: 20px;
+    
+    
+}
+
 
 
 
