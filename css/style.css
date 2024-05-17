@@ -500,13 +500,14 @@ body {
 
 .contenedor-pedidos div:first-child {
 
-    margin-top: -2rem;
+    margin-top: -2.2rem;
+    margin-left: 6rem;
 
 }
 
 .img-whatsapp-pedidos img {
 
-    width: 90%;
+    width: 88%;
     padding-left: 3rem;
 
 }
@@ -514,8 +515,8 @@ body {
 
 .contenedor-pedidos div:last-child {
 
-    margin-top: -1.8rem;
-    padding-right: 4.5rem;
+    margin-top: -2rem;
+    padding-right: 11rem;
 
 }
 
@@ -542,7 +543,7 @@ body {
 
     margin-top: 2rem;
     margin-left: 4.5rem;
-
+    text-decoration: underline;
 }
 
 
