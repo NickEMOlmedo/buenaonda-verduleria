@@ -29,7 +29,7 @@
     --bg-container-form: #EDEDED;
     --bg-button-enviar: #28B15F;
     --bg-button-enviar-dark: #18723c;
-    --producs-background-white: #FBFBFB;
+    --products-background-white: #FBFBFB;
     --second-color-products: #B9B1A7;
 }
 
@@ -563,6 +563,7 @@ body {
     display: flex;
     height: 4.417rem;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     align-items: center;
     background-color: var(--bg-button-enviar);
 
@@ -582,21 +583,25 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    margin-top: 3rem;
+    justify-items: center;
     gap: 2rem;
-    justify-content: center;
-    align-content: center;
-
 }
 
 .card-index {
 
     width: 17.25rem;
     height: 22.125rem;
-    background-color: var(--cards-background-white);
+    background-color: var(--products-background-white);
+    
 }
 
-.card-index img {
+.card-index a {
+
+text-decoration: none;
+
+}
+
+.card-index img:first-child {
 
     display: flex;
     width: 17.25rem;
@@ -609,14 +614,60 @@ body {
     margin-top: 0.5rem;
     margin-left: 1rem;
     color: var(--text-color-secondary);
+    font-size: 1.083rem;
     font-weight: bold;
 }
 
-.card-index p:nth-child(2) {
+.card-index p:nth-child(3) {
 
-    color: ();
+    color: var(--second-color-products);
+    font-size: 0.917rem;
+}
+
+.card-index img:nth-child(4) {
+
+    width: 6.667rem;
+    height: 1.333rem;
+    margin: 0.5rem auto 1rem 1rem;
+    
 
 }
+
+.card-index img:last-child {
+
+
+    margin: 0.5rem auto auto 1rem;
+}
+
+.pedilo-ya-cards {
+
+    width: 15.667rem;
+    height: 2.875rem;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: var(--bg-button-enviar);
+
+
+}
+
+.pedilo-ya-cards img:nth-child(2) {
+
+    width: 1.667rem;
+    height: 1.667rem;
+
+}
+
+
+.pedilo-ya-cards p:first-child {
+
+    margin-top: 0.7rem;
+    margin-left: 4rem;
+    font-size: 1 rem;
+    color: var(--text-color-primary);
+
+}
+
 
 /* Media Querys */
 
@@ -898,7 +949,7 @@ body {
 
 .card .contenido {
     padding: 20px;
-    
+
 }
 
 .card .contenido h3 {
