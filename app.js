@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const selectMotivo = document.querySelector('#motivo');
     const inputMensaje = document.querySelector('#mensaje');
     const formularioContactanos = document.querySelector('#contactanos-formulario');
+    const btnEnviar = document.querySelector('#form-button');
 
     inputNombre.addEventListener('blur', validarFormulario);
     inputApellido.addEventListener('blur', validarFormulario);
@@ -14,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     inputGenero.addEventListener('blur', validarFormulario);
     selectMotivo.addEventListener('blur', validarFormulario);
     inputMensaje.addEventListener('blur', validarFormulario);
+    btnEnviar.addEventListener('click', enviarFormulario);
 
     function validarFormulario(e) {
         const referencia = e.target;
@@ -48,6 +50,10 @@ document.addEventListener('DOMContentLoaded', function() {
             // Si hay una alerta, la eliminamos
             alertaExistente.remove();
         }
+    }
+
+    function enviarFormulario() {
+        alert('Enviando formulario');
     }
 
 });
