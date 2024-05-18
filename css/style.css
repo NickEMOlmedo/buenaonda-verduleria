@@ -592,7 +592,8 @@ body {
 .card-index {
 
     width: 17.25rem;
-    height: 22.125rem;
+    height: auto;
+    padding-bottom: 1rem;
     background-color: var(--products-background-white);
 
 }
@@ -1032,11 +1033,11 @@ body {
 .segunda-nav {
     background-color: #28B15F;
     padding: 10px;
-    width: 85%;
+    width: 90%;
     border-radius: 15px;
     display: flex;
     margin: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     justify-content: center;
 }
 .segunda-nav nav{
@@ -1051,7 +1052,9 @@ body {
     display: flex;
     justify-content: space-around;
 }
-
+.margin-top{
+    margin-top: 2rem;
+}
 .segunda-nav ul li {
     justify-content: space-between;
     display: flex;
