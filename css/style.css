@@ -356,10 +356,9 @@ body {
 
     display: flex;
     height: 4.417rem;
-    margin: 0 auto;
     margin-top: 2rem;
+    margin-bottom: 3rem;
     align-items: center;
-    justify-content: center;
     background-color: var(--bg-button-enviar);
     color: var(--text-color-primary);
     font-size: 1.5rem;
@@ -367,13 +366,17 @@ body {
 
 }
 
+.promotions-banner p {
 
+
+    margin-left: 1.5rem;
+
+}
 
 .promotions-cards {
 
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    gap: 2rem;
 
 }
 
@@ -381,8 +384,7 @@ body {
 
     width: 17.792rem;
     height: 19.542rem;
-    margin-top: 2rem;
-    flex-direction: row;
+    margin: 0 auto;
     color: var(--text-color-primary);
 
 }
@@ -592,12 +594,12 @@ body {
     width: 17.25rem;
     height: 22.125rem;
     background-color: var(--products-background-white);
-    
+
 }
 
 .card-index a {
 
-text-decoration: none;
+    text-decoration: none;
 
 }
 
@@ -629,7 +631,7 @@ text-decoration: none;
     width: 6.667rem;
     height: 1.333rem;
     margin: 0.5rem auto 1rem 1rem;
-    
+
 
 }
 
@@ -669,7 +671,7 @@ text-decoration: none;
 }
 
 
-/* Media Querys */
+/* Media Querys Index */
 
 
 @media (max-width: 960px) {
@@ -695,7 +697,6 @@ text-decoration: none;
         flex-direction: column;
         gap: 0.5rem;
 
-
     }
 
     .img-welcome img {
@@ -703,7 +704,6 @@ text-decoration: none;
         width: 65%;
 
     }
-
 
     .last-banner-main {
 
@@ -713,7 +713,7 @@ text-decoration: none;
 
     .promotions-cards {
 
-        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
 
     }
 
@@ -735,6 +735,12 @@ text-decoration: none;
     }
 
     @media (min-width: 900px) {
+
+        .footer {
+
+            margin-bottom: 1.5rem;
+
+        }
 
         .contenedor-pedidos div:first-child {
 
@@ -772,22 +778,54 @@ text-decoration: none;
 
         }
 
+        .products-cards {
+
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        .promotions-cards p {
+
+            font-size: 1.6rem;
+
+        }
     }
 }
 
 
+@media (max-width: 768px) {
+
+    .products-cards {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .promotions-cards p {
+
+        font-size: 1.6rem;
+
+    }
+
+}
+
 @media (max-width: 480px) {
 
     .links-navbar {
+
         flex-direction: column;
         text-align: center;
+
     }
 
     #logo {
+
         margin-left: -6rem;
+
     }
 
     .logo-redes-navbar {
+
         margin-left: .5rem;
     }
 
@@ -800,12 +838,6 @@ text-decoration: none;
     .img-welcome {
 
         display: none;
-
-    }
-
-    .promotions-cards {
-
-        flex-direction: column;
 
     }
 
@@ -824,6 +856,23 @@ text-decoration: none;
 
     }
 
+    .products-cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .promotions-cards {
+
+        flex-direction: column;
+
+    }
+
+    .promotions-cards p {
+
+        font-size: 1.7rem;
+
+    }
 }
 
 
