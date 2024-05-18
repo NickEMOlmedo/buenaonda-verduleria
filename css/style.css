@@ -803,6 +803,10 @@ body {
 
 @media (max-width: 768px) {
 
+    * {
+        max-width: 768px;
+    }
+
     .products-cards {
 
         grid-template-columns: 1fr 1fr;
