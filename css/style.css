@@ -685,8 +685,184 @@ body {
 /* --- Fin Seccion Index --- */
 
 /* --- Comienzo Seccion Productos  --- */
+.conteiner-pedidos{
+    display: flex;
+    margin-top: 3rem;
+    width: 100%;
+}
+.conteiner-pedidos .cuadrado-celeste{
+    width: 90%;
+    height: 20rem;
+    margin: 20px;
+    background-color: var(--secondary-color);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
+    text-align:center;
+}
+.conteiner-pedidos .cuadrado-celeste p{
+    margin:10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
+}
+.cuadrado-celeste img{
+    display: block;
+    min-width: 65%;
+    margin:1rem auto 2rem auto;
 
+}
+.conteiner-pedidos p:first-child{
+    color: var(--text-color-primary);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+.conteiner-pedidos img :nth-child(2){
+    width: 50%;
+}
+.cuad-ped{
+    display:flex;
+    justify-items: center;
+}
+.cuad-ped div:first-child{
+    margin-top: -2.2rem;
+    margin-left: 6rem;
+}
+.icono-whatsapp img{
+    width:200px;
+    height: 150px;
+    padding-left: -10rem;
+
+}
+.cuad-ped div:last-child{
+    margin-top: -2rem;
+    padding-right: 11rem;
+}
+.icono-moto img{
+    width: 200px;
+    height: 150px;
+}
+.cuadrado-tel{
+    display: flex;
+    width: 26.625rem;
+    height: 5rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #A859C3;
+    border-radius: 20px;
+}
+.cuadrado-tel p:first-child{
+margin-top: 2rem;
+margin-left:4.5rem;
+text-decoration: underline;
+}
+    .segunda-nav{
+        background-color: #28B15F;
+        padding: 10px;
+        width: 85%;
+        border-radius: 20px;
+        display: flex;
+        margin:auto;
+        justify-content: center;
+    }
+    .segunda-nav ul{
+        list-style-type: none;
+        padding: 0%;
+        margin: 0%;
+        display: flex;
+    }
+    .segunda-nav ul li{
+        margin-right: 100px;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: nowrap;
+    
+    
+    }
+    .segunda-nav ul li a{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    .conteiner-productos{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap:20px;
+    
+    }
+    .card{
+        width: 350px;
+        padding: 16px;
+        margin: 20px;
+        border-radius: 6px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 1px 10px ;
+        cursor: default;
+        gap: 16px;
+    }
+    .card img{
+        width: 100%;
+        height: 200%;
+    
+    }
+    .card .contenido{
+        padding: 20px;
+    ;
+    }
+    .card .contenido h3{
+    font-family: Rubik;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30.81px;
+    text-align: left;
+    
+    }
+    .card .contenido p{
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25.78px;
+    text-align: left;
+    color: #B9B1A7;
+    ;
+    
+    
+    }
+    .card .contenido p::after{
+        content: url(../img/estrellas.png);
+        padding-bottom: 10px;
+    }
+    .card .contenido a{
+        text-decoration: none;
+        display: flex;
+        padding: 10px;
+        margin-top: 40px;
+        background-color: #28B15F;
+        color: #E5E5E5;
+        border-radius: 30px;
+        height: 10%;
+        align-items: center;
+        justify-content: center;
+    
+        
+    }
+    .card .contenido a:after{
+        content:url(../img/icons8-whatsapp-48.png);
+        padding-left: 20px;
+    }
+    
+    
+    
+    
+    
 
 
 
@@ -1053,148 +1229,6 @@ textarea {
 /* --- Footer --- */
 
 /* --- Comienzo Seccion Productos  --- */
-
-.contenedor{
-background-color: #4A7AD3;
-width: 80%;
-height: 470px;
-margin: 8%;
-display:flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-padding: auto;
-}
-
- p{
-color:#FFFFFF;
-font-family: Rubik;
-font-size: 36px;
-font-weight: 700;
-line-height: 42.66px;
-flex-direction:column ;
-width: 50%;
-position: relative;
-top: 30%;
-
-}
-
-.motodelivery{
-width: 200px;
-align-self: flex-end;
-position: relative;
-top:35%;
-}
-.icono-whatsapp{
-    width: 200px;
-    align-self: flex-start;
-    position:relative;
-    top:5%;
-    
-}
-button{
-background-color:#A859C3;
-color:#FFFFFF;
- width: 639px;
-height: 120px;
-font-family: Rubik;
-font-size: 48px;
-font-weight: 700;
-line-height: 56.88px;
-text-align: center;
-position: relative;
-bottom: 20%;
-border-radius: 20px;
-
-}
-.segunda-nav{
-    background-color: #28B15F;
-    padding: 10px;
-    width: 85%;
-    border-radius: 20px;
-    display: flex;
-    margin:auto;
-    justify-content: center;
-}
-.segunda-nav ul{
-    list-style-type: none;
-    padding: 0%;
-    margin: 0%;
-    display: flex;
-}
-.segunda-nav ul li{
-    margin-right: 100px;
-    justify-content: space-between;
-    display: flex;
-    flex-wrap: nowrap;
-
-
-}
-.segunda-nav ul li a{
-    color: #FFFFFF;
-    text-decoration: none;
-}
-.conteiner-productos{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap:10px;
-    
-
-}
-.card{
-    width: 400px;
-    padding: 16px;
-    margin: 20px;
-    border-radius: 6px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 1px 10px ;
-    cursor: default;
-    gap: 16px;
-}
-.card img{
-    width: 100%;
-    height: 200%;
-
-}
-.card .contenido{
-    padding: 20px;
-;
-}
-.card .contenido h3{
-font-family: Rubik;
-font-size: 26px;
-font-weight: 700;
-line-height: 30.81px;
-text-align: left;
-
-}
-.card .contenido p{
-font-family: Roboto;
-font-size: 22px;
-font-weight: 500;
-line-height: 25.78px;
-text-align: left;
-color: #B9B1A7;
-;
-
-
-}
-.card .contenido a{
-    text-decoration: none;
-    display: inline-block;
-    padding: 50px;
-    margin-top: 10px;
-    background-color: #28B15F;
-    color: #E5E5E5;
-    border-radius: 30px;
-    height: 20px;
-    
-    
-}
-
-
 
 
 
