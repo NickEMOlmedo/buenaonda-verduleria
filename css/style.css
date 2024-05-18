@@ -56,7 +56,7 @@ body {
 
     display: grid;
     margin: 0 auto;
-    width: 100;
+    max-width: 100%;
     grid-template:
 
         "navbar" auto
@@ -178,6 +178,8 @@ body {
     display: inline-flex;
     list-style: none;
     flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem 0;
 
 
 }
@@ -193,7 +195,7 @@ body {
 
 .links-navbar li {
 
-    padding: 0 1rem;
+    padding: 0.5rem 1rem;
 
 }
 
@@ -349,8 +351,9 @@ body {
 .carrousel-promotions {
 
     display: block;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
 }
 
 .promotions-banner {
@@ -588,6 +591,7 @@ body {
     grid-template-rows: auto;
     justify-items: center;
     gap: 2rem;
+   
 }
 
 .card-index {
@@ -792,11 +796,6 @@ body {
 
         }
 
-        .main-container {
-
-        width: auto;
-        margin: 0 auto;
-    }
     }
 }
 
@@ -809,21 +808,21 @@ body {
 
     }
 
+    .promotions-cards {
+
+        flex-direction: column;
+
+    }
+
     .promotions-cards p {
 
         font-size: 1.6rem;
 
     }
 
-    .main-container {
-
-        width:fit-content;
-
-    }
-
 }
 
-@media (max-width: 480px) {
+@media (max-width: 390px) {
 
     .links-navbar {
 
@@ -855,10 +854,9 @@ body {
 
     }
 
-    .main-container {
+    .img-welcome img{
 
-        width: auto;
-        margin: 0 auto;
+        display: none;
     }
 
     .orders-banner-tlf {
@@ -894,17 +892,8 @@ body {
 
     }
 
-
-    @media (max-width: 360px) {
-        
-
-        .main-container {
-
-            width: auto;
-        
-        }
-    };
 }
+
 
 
 
