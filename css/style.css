@@ -1152,7 +1152,7 @@ body {
     border-radius: 15px;
     display: flex;
     justify-content: center;
-
+    margin: auto;
 }
 
 .contRedes-sociales {
