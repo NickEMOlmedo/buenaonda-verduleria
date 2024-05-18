@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
 
+
 }
 
 /* --- Fin de Google Fonts --- */
@@ -55,7 +56,7 @@ body {
 
     display: grid;
     margin: 0 auto;
-    width: 100%;
+    width: 100;
     grid-template:
 
         "navbar" auto
@@ -790,6 +791,12 @@ body {
             font-size: 1.6rem;
 
         }
+
+        .main-container {
+
+        width: auto;
+        margin: 0 auto;
+    }
     }
 }
 
@@ -805,6 +812,12 @@ body {
     .promotions-cards p {
 
         font-size: 1.6rem;
+
+    }
+
+    .main-container {
+
+        width:fit-content;
 
     }
 
@@ -842,6 +855,12 @@ body {
 
     }
 
+    .main-container {
+
+        width: auto;
+        margin: 0 auto;
+    }
+
     .orders-banner-tlf {
 
 
@@ -874,7 +893,19 @@ body {
         font-size: 1.7rem;
 
     }
+
+
+    @media (max-width: 360px) {
+        
+
+        .main-container {
+
+            width: auto;
+        
+        }
+    };
 }
+
 
 
 /* Fin Media Querys */
@@ -884,68 +915,77 @@ body {
 /* --- Comienzo Seccion Productos  --- */
 
 
-.segunda-nav{
-        background-color: #28B15F;
-        padding: 10px;
-        width: 85%;
-        border-radius: 20px;
-        display: flex;
-        margin:auto;
-        justify-content: center;
-    }
-.segunda-nav ul{
-        list-style-type: none;
-        padding: 0%;
-        margin: 0%;
-        display: flex;
-    }
-.segunda-nav ul li{
-        justify-content: space-between;
-        display: flex;
-        flex-wrap: nowrap;
-    
-    
-    }
-.segunda-nav ul li a{
-        color: #FFFFFF;
-        text-decoration: none;
-    }
-.container-productos{
+.segunda-nav {
+    background-color: #28B15F;
+    padding: 10px;
+    width: 85%;
+    border-radius: 20px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.segunda-nav ul {
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+}
+
+.segunda-nav ul li {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: nowrap;
+
+
+}
+
+.segunda-nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.container-productos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     justify-items: center;
     gap: 2rem;
-    
-    }
-.card-productos{
-        width: 350px;
-        padding: 16px;
-        margin: 20px;
-        border-radius: 6px;
-        background-color: #FFFFFF;
-        box-shadow: 0px 1px 10px ;
-        cursor: default;
-        gap: 16px;
-    }
-.card img{
-        width: 100%;
-        height: 200%;
-    
-    }
-.card .contenido{
-        padding: 20px;
+
+}
+
+.card-productos {
+    width: 350px;
+    padding: 16px;
+    margin: 20px;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 10px;
+    cursor: default;
+    gap: 16px;
+}
+
+.card img {
+    width: 100%;
+    height: 200%;
+
+}
+
+.card .contenido {
+    padding: 20px;
     ;
-    }
-.card .contenido h3{
+}
+
+.card .contenido h3 {
     font-family: Rubik;
     font-size: 26px;
     font-weight: 700;
     line-height: 30.81px;
     text-align: left;
-    
-    }
-.card .contenido p{
+
+}
+
+.card .contenido p {
     font-family: Roboto;
     font-size: 22px;
     font-weight: 500;
@@ -953,36 +993,39 @@ body {
     text-align: left;
     color: #B9B1A7;
     ;
-    
-    
-    }
-.card .contenido p::after{
-        content: url(../img/estrellas.png);
-        padding-bottom: 10px;
-    }
-.card .contenido a{
-        text-decoration: none;
-        display: flex;
-        padding: 10px;
-        margin-top: 40px;
-        background-color: #28B15F;
-        color: #E5E5E5;
-        border-radius: 30px;
-        height: 10%;
-        align-items: center;
-        justify-content: center;
-    
-        
-    }
-.card .contenido a:after{
-        content:url(../img/icons8-whatsapp-48.png);
-        padding-left: 20px;
-    }
-    
-    
-    
-    
-    
+
+
+}
+
+.card .contenido p::after {
+    content: url(../img/estrellas.png);
+    padding-bottom: 10px;
+}
+
+.card .contenido a {
+    text-decoration: none;
+    display: flex;
+    padding: 10px;
+    margin-top: 40px;
+    background-color: #28B15F;
+    color: #E5E5E5;
+    border-radius: 30px;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.card .contenido a:after {
+    content: url(../img/icons8-whatsapp-48.png);
+    padding-left: 20px;
+}
+
+
+
+
+
 
 
 
@@ -1040,7 +1083,8 @@ body {
     margin-bottom: 2rem;
     justify-content: center;
 }
-.segunda-nav nav{
+
+.segunda-nav nav {
     width: 100%;
 }
 
@@ -1058,10 +1102,11 @@ body {
     display: flex;
     flex-wrap: nowrap;
 }
-.cuadrado-celeste img{
+
+.cuadrado-celeste img {
     display: block;
     min-width: 65%;
-    margin:1rem auto 2rem auto;
+    margin: 1rem auto 2rem auto;
 
 
 
@@ -1136,7 +1181,8 @@ body {
     height: 20px;
 
 }
-@media (max-width:500px){
+
+@media (max-width:500px) {
     .segunda-nav ul li a {
         font-size: medium;
     }
@@ -1241,9 +1287,10 @@ body {
     margin: auto;
 }
 
-.tel-contacto .ancho{
+.tel-contacto .ancho {
     width: 90%;
 }
+
 .tel-contacto .row .col-6 {
     background-color: var(--tertiary-color);
     display: flex;
@@ -1264,9 +1311,10 @@ body {
     margin: auto;
 }
 
-.margin-top{
+.margin-top {
     margin-top: 2rem;
 }
+
 @media (max-width: 1200px) {
 
     .contRedes-sociales {
