@@ -466,7 +466,7 @@ body {
 .cuadrado-banner {
 
     width: 90%;
-    height: 20rem;
+    height: auto;
     margin: 0 auto;
     background-color: var(--primary-color);
 
@@ -510,8 +510,7 @@ body {
 
 .contenedor-pedidos div:first-child {
 
-    margin-top: -2.2rem;
-    margin-left: 6rem;
+
 
 }
 
@@ -525,9 +524,11 @@ body {
 
 .contenedor-pedidos div:last-child {
 
-    margin-top: -2rem;
-    padding-right: 11rem;
 
+}
+.orders-banner-tlf div{
+    margin: auto;
+    padding-right: 0%;
 }
 
 .img-moto-pedidos img {
@@ -551,8 +552,7 @@ body {
 
 .orders-banner-tlf p:first-child {
 
-    margin-top: 2rem;
-    margin-left: 4.5rem;
+    margin-top: -1rem;
     text-decoration: underline;
 }
 
@@ -864,11 +864,8 @@ body {
     }
 
     .orders-banner-tlf {
-
-
-        width: 15rem;
-        height: 5rem;
-
+        width: auto;
+        margin-bottom: 1rem;
     }
 
     .img-whatsapp-pedidos,
