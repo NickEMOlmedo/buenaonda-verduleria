@@ -53,20 +53,21 @@ body {
 /* --- GRID --- */
 
 .main-container {
-
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    /* display: grid;
     margin: 0 auto;
     max-width: 100%;
     grid-template:
 
-        "navbar" auto
-        "main-welcome" auto
-        "banner-main-welcome" auto
-        "carrousel-promotions" auto
-        "orders-banner" auto
-        "sales-section" auto
-        "footer" auto;
-
+        "navbar" 
+        "main-welcome" 
+        "banner-main-welcome" 
+        "carrousel-promotions" 
+        "orders-banner" 
+        "sales-section" 
+        "footer" ; */
+    }
 
     .navbar {
 
@@ -107,7 +108,7 @@ body {
         grid-area: footer;
 
     }
-}
+
 
 /* --- Fin de Grid --- */
 
@@ -467,7 +468,6 @@ body {
 
     width: 90%;
     height: auto;
-    margin: 0 auto;
     background-color: var(--primary-color);
 
 
@@ -527,10 +527,12 @@ body {
 
 }
 .orders-banner-tlf div{
+  
+}
+.orders-banner-tlf_tel{
     margin: auto;
     padding-right: 0%;
 }
-
 .img-moto-pedidos img {
 
     width: 120%;
