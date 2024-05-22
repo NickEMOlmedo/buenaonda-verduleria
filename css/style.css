@@ -67,47 +67,47 @@ body {
         "orders-banner" 
         "sales-section" 
         "footer" ; */
-    }
+}
 
-    .navbar {
+.navbar {
 
-        grid-area: navbar;
-    }
+    grid-area: navbar;
+}
 
 
-    .main-welcome {
+.main-welcome {
 
-        grid-area: main-welcome;
+    grid-area: main-welcome;
 
-    }
+}
 
-    .banner-main-welcome {
+.banner-main-welcome {
 
-        grid-area: banner-main-welcome;
+    grid-area: banner-main-welcome;
 
-    }
+}
 
-    .carrousel-promotions {
+.carrousel-promotions {
 
-        grid-area: carrousel-promotions;
+    grid-area: carrousel-promotions;
 
-    }
+}
 
-    .orders-banner {
+.orders-banner {
 
-        grid-area: orders-banner;
+    grid-area: orders-banner;
 
-    }
+}
 
-    .sales-section {
+.sales-section {
 
-        grid-area: sales-section
-    }
+    grid-area: sales-section
+}
 
-    .footer {
-        grid-area: footer;
+.footer {
+    grid-area: footer;
 
-    }
+}
 
 
 /* --- Fin de Grid --- */
@@ -468,6 +468,7 @@ body {
 
     width: 90%;
     height: auto;
+    margin: 0 auto;
     background-color: var(--primary-color);
 
 
@@ -505,37 +506,36 @@ body {
 .contenedor-pedidos {
 
     display: flex;
+    margin: 0 auto;
 
 }
 
 .contenedor-pedidos div:first-child {
 
-
-
-}
-
-.img-whatsapp-pedidos img {
-
-    width: 88%;
-    padding-left: 3rem;
+    margin: 0 auto;
+   margin-top: -1.5rem;
+    
 
 }
 
 
 .contenedor-pedidos div:last-child {
 
+    margin: 0 auto;
+    margin-top: -1.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.img-whatsapp-pedidos img {
+
+    width: 50%;
 
 }
-.orders-banner-tlf div{
-  
-}
-.orders-banner-tlf_tel{
-    margin: auto;
-    padding-right: 0%;
-}
+
 .img-moto-pedidos img {
 
-    width: 120%;
+    width: 95%;
 
 }
 
@@ -554,7 +554,8 @@ body {
 
 .orders-banner-tlf p:first-child {
 
-    margin-top: -1rem;
+    margin-top: 1rem;
+    text-align: center;
     text-decoration: underline;
 }
 
@@ -593,7 +594,7 @@ body {
     grid-template-rows: auto;
     justify-items: center;
     gap: 2rem;
-   
+
 }
 
 .card-index {
@@ -860,7 +861,7 @@ body {
 
     }
 
-    .img-welcome img{
+    .img-welcome img {
 
         display: none;
     }
@@ -1744,7 +1745,7 @@ select {
 
 @media (max-width: 490px) {
 
-    *  {
+    * {
         max-width: 490px;
     }
 
