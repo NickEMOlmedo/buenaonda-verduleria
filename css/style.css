@@ -1754,7 +1754,11 @@ select {
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 490px) {
+
+    *  {
+        max-width: 490px;
+    }
 
     .container-contactanos {
         width: 20rem;
